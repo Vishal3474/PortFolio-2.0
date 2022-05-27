@@ -117,7 +117,7 @@ const Projects = () => {
             <div class="p-5">
               <a href="https://assignment-26-unit-converter-without-prompt-vishal3474.codeyogiteam.repl.co/">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  Todo-App
+                  Unit Converter
                 </h5>
               </a>
               <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
