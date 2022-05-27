@@ -34,82 +34,20 @@ const Projects = () => {
               </p>
             </div>
           </div>
-          <div className='flex'>
-            <div>
-              <CheckIcon className='w-7 mr-4 text-green-600' />
-            </div>
-            <div>
-              <h3 className='font-bold text-lg'>CodeYogi Clone</h3>
-              <p className='text-lg pt-2 pb-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores maxime deserunt voluptatibus consequatur similique
-                voluptates!
-              </p>
-            </div>
-          </div>
-          <div className='flex'>
-            <div>
-              <CheckIcon className='w-7 mr-4 text-green-600' />
-            </div>
-            <div>
-              <h3 className='font-bold text-lg'>Meet Our Team Card</h3>
-              <p className='text-lg pt-2 pb-4'>
-              Meet our Team ,Alone we can do so little; together we can do so much. – Helen Keller
-              </p>
-            </div>
-          </div>
-          <div className='flex'>
-            <div>
-              <CheckIcon className='w-7 mr-4 text-green-600' />
-            </div>
-            <div>
-              <h3 className='font-bold text-lg'>Find Table</h3>
-              <p className='text-lg pt-2 pb-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores maxime deserunt voluptatibus consequatur similique
-                voluptates!
-              </p>
-            </div>
-          </div>
-          <div className='flex'>
-            <div>
-              <CheckIcon className='w-7 mr-4 text-green-600' />
-            </div>
-            <div>
-              <h3 className='font-bold text-lg'>To-Do List App</h3>
-              <p className='text-lg pt-2 pb-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores maxime deserunt voluptatibus consequatur similique
-                voluptates!
-              </p>
-            </div>
-          </div>
-          <div className='flex'>
-            <div>
-              <CheckIcon className='w-7 mr-4 text-green-600' />
-            </div>
-            <div>
-              <h3 className='font-bold text-lg'>Figma Responsibe Design</h3>
-              <p className='text-lg pt-2 pb-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores maxime deserunt voluptatibus consequatur similique
-                voluptates!
-              </p>
-            </div>
-          </div>
-          <div className='flex'>
-            <div>
-              <CheckIcon className='w-7 mr-4 text-green-600' />
-            </div>
-            <div>
-              <h3 className='font-bold text-lg'>Guess My Favourite Fruit</h3>
-              <p className='text-lg pt-2 pb-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores maxime deserunt voluptatibus consequatur similique
-                voluptates!
-              </p>
-            </div>
-          </div>
+          <div class="max-w-sm rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
+  <a href="#">
+    <img class="rounded-t-lg" src="https://cdn.discordapp.com/attachments/944189291427430421/979790050948681788/1.jpg" alt="" />
+  </a>
+  <div class="p-5">
+    <a href="#">
+      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Todo-App</h5>
+    </a>
+    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">It is a simple Todo app! Learned about useState and useDispatch to add a task, mark it as complete , mark it as Incomplete and Show Number Of Todo Task</p>
+    <a href="https://todo-vishal.netlify.app/" class="inline-flex items-center rounded-lg bg-indigo-700 py-2 px-3 text-center text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"> View Project </a>
+  </div>
+</div>
+
+           
 
         </div>
       </div>
