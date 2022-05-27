@@ -28,9 +28,8 @@ const Projects = () => {
                 </h5>
               </a>
               <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                It is a simple Todo app! Learned about useState and useDispatch
-                to add a task, mark it as complete , mark it as Incomplete and
-                Show Number Of Todo Task
+                Learned about useState and useDispatch to add a task, mark it as
+                complete , mark it as Incomplete and Show Number Of Todo Task
               </p>
               <a
                 href="https://todo-vishal.netlify.app/"
