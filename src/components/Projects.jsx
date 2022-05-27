@@ -71,24 +71,31 @@ const Projects = () => {
           </div>
 
           <div class="max-w-sm rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
-            <a href="https://clonecodeyogi.netlify.app/">
+            <a
+              href="https://bit.ly/3Gxrxmj
+"
+            >
               <img
                 class="rounded-t-lg"
-                src="https://cdn.discordapp.com/attachments/944189291427430421/979790050948681788/1.jpg"
+                src="https://cdn.discordapp.com/attachments/944189291427430421/979795935196479529/Tailwind.png"
                 alt=""
               />
             </a>
             <div class="p-5">
-              <a href="https://clonecodeyogi.netlify.app/">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  Todo-App
-                </h5>
+              <a
+                href="https://bit.ly/3Gxrxmj
+"
+              >
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"></h5>
               </a>
               <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                xyz
+                I created the mobile and desktop version of home page same like
+                as Figma Created in tailwindcss Playground Made with ❤️ at
+                CodeYogi 😜
               </p>
               <a
-                href="https://clonecodeyogi.netlify.app/"
+                href="https://bit.ly/3Gxrxmj
+"
                 class="inline-flex items-center rounded-lg bg-indigo-700 py-2 px-3 text-center text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 {" "}
