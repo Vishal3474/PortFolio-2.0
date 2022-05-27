@@ -36,7 +36,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="pricing" smooth={true} offset={-50} duration={500}>
+              <Link to="Resume" smooth={true} offset={-50} duration={500}>
                 Resume
               </Link>
             </li>
@@ -76,12 +76,12 @@ const Navbar = () => {
         <li className="border-b-2 border-zinc-300 w-full">
           <Link
             onClick={handleClose}
-            to="pricing"
+            to="Resume"
             smooth={true}
             offset={-50}
             duration={500}
           >
-            Pricing
+            Resume
           </Link>
         </li>
       </ul>
