@@ -5,7 +5,8 @@ import React from 'react';
 const Resume = () => {
   return (
     <div name='Resume' className='w-full my-32'  >
-     <h1 class="text-indigo-500 text-4xl font-bold text-center"  >Resume</h1>
+     <h1 class="text-indigo-500 text-4xl font-bold text-center mb-6"  >Resume</h1>
+     
     <div class=" border border-1 border-black ">
     <img className='mr-4 ml-4 '  src="https://cdn.discordapp.com/attachments/944189291427430421/979783635404206112/Vishal_InternshalaResume_2_page-0001.jpg"></img>
      </div>
