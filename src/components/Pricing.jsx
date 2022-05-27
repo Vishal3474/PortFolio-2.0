@@ -11,7 +11,7 @@ const Pricing = () => {
      </div>
     
     <div className='items-center text-center'>
-    <button className='p-2 mb-4 mt-2 mb-2 text-center'><a href="https://drive.google.com/u/0/uc?id=1l0lB9co1om5PGKu0qMBQfFENA9l1Drtm&export=download">Download Resume</a></button>
+    <button className='p-2 mb-4 mt-2 mb-2 text-center'><a href="https://drive.google.com/file/d/1-Ems5JioDmkpgfgVomtU1KAVtjJnizWY/view?usp=sharing">Download Resume</a></button>
     </div>
     
     </div>
