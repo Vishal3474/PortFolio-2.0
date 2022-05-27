@@ -7,7 +7,7 @@ const Resume = () => {
     <div name='Resume' className='w-full my-32'  >
      <h1 class="text-indigo-500 text-4xl font-bold text-center"  >Resume</h1>
     <div class=" border border-1 border-black ">
-    <img className='m-2 '  src="https://cdn.discordapp.com/attachments/944189291427430421/979783635404206112/Vishal_InternshalaResume_2_page-0001.jpg"></img>
+    <img className='mr-4 ml-4 '  src="https://cdn.discordapp.com/attachments/944189291427430421/979783635404206112/Vishal_InternshalaResume_2_page-0001.jpg"></img>
      </div>
     <div className='items-center text-center'>
     <button className='p-2 mb-4 mt-2 mb-2 text-center'><a href="https://drive.google.com/file/d/1fvADDl6MmPLGAKhw2lMH4eKE7DGqFSkC/view?usp=sharing">Download Resume</a></button>
