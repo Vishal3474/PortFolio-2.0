@@ -161,6 +161,92 @@ const Projects = () => {
               </a>
             </div>
           </div>
+
+          <div class="max-w-sm rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
+            <a href="https://assignment-34-create-ask-jud-clone-vishal3474.codeyogiteam.repl.co/">
+              <img
+                class="rounded-t-lg"
+                src="https://cdn.discordapp.com/attachments/944189291427430421/979814205039460402/Ask_CodeYogi.png"
+                alt="No img"
+              />
+            </a>
+            <div class="p-5">
+              <a href="https://assignment-34-create-ask-jud-clone-vishal3474.codeyogiteam.repl.co/">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  Ask_Jud
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                This is same like as Ask Jud Clone, Do you need to ask a
+                question? Are you looking for answers? Jud offers you a space to
+                ask anything you want.
+              </p>
+              <a
+                href="https://assignment-34-create-ask-jud-clone-vishal3474.codeyogiteam.repl.co/"
+                class="inline-flex items-center rounded-lg bg-indigo-700 py-2 px-3 text-center text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                {" "}
+                View Project{" "}
+              </a>
+            </div>
+          </div>
+
+          <div class="max-w-sm rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
+            <a href="https://assignment-28-show-tables-of-a-range-of-numbers-vishal3474.codeyogiteam.repl.co/">
+              <img
+                class="rounded-t-lg"
+                src="https://cdn.discordapp.com/attachments/944189291427430421/979814205383376926/Find_Table.png"
+                alt="No img"
+              />
+            </a>
+            <div class="p-5">
+              <a href="https://assignment-28-show-tables-of-a-range-of-numbers-vishal3474.codeyogiteam.repl.co/">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  Find_Table
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Unit of Conversion is a multi-step process involving
+                multiplication or division by a Measurment Units Conveter, can
+                all be measured in various ways.
+              </p>
+              <a
+                href="https://assignment-28-show-tables-of-a-range-of-numbers-vishal3474.codeyogiteam.repl.co/"
+                class="inline-flex items-center rounded-lg bg-indigo-700 py-2 px-3 text-center text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                {" "}
+                View Project{" "}
+              </a>
+            </div>
+          </div>
+
+          <div class="max-w-sm rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
+            <a href="https://assignment-29-create-team-list-page-using-react-vishal3474.codeyogiteam.repl.co/">
+              <img
+                class="rounded-t-lg"
+                src="https://cdn.discordapp.com/attachments/944189291427430421/979814205916057610/Meet_Team_Card.png"
+                alt="No img"
+              />
+            </a>
+            <div class="p-5">
+              <a href="https://assignment-29-create-team-list-page-using-react-vishal3474.codeyogiteam.repl.co/">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  Meet_Team_Card
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Meet our Team ,Alone we can do so little; together we can do so
+                much. – Helen Keller
+              </p>
+              <a
+                href="https://assignment-29-create-team-list-page-using-react-vishal3474.codeyogiteam.repl.co/"
+                class="inline-flex items-center rounded-lg bg-indigo-700 py-2 px-3 text-center text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                {" "}
+                View Project{" "}
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
