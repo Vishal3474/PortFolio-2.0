@@ -10,7 +10,7 @@ const Resume = () => {
     <img  src="https://cdn.discordapp.com/attachments/944189291427430421/979783635404206112/Vishal_InternshalaResume_2_page-0001.jpg"></img>
      </div>
     <div className='items-center text-center'>
-    <button className='p-2 mb-4 mt-2 mb-2 text-center'><a href="https://drive.google.com/file/d/1-Ems5JioDmkpgfgVomtU1KAVtjJnizWY/view?usp=sharing">Download Resume</a></button>
+    <button className='p-2 mb-4 mt-2 mb-2 text-center'><a href="https://drive.google.com/drive/u/0/folders/1z5FbB0NAVEKsXRHdhqPrknSxUSA4kOrr">Download Resume</a></button>
     </div>
     
     </div>
