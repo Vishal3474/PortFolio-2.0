@@ -9,7 +9,6 @@ const Resume = () => {
     <div class=" border border-1 border-black ">
     <img  src="https://cdn.discordapp.com/attachments/944189291427430421/979619964443066388/Web_developer_Resume.jpg"></img>
      </div>
-    <embed src="https://drive.google.com/drive/u/0/folders/1nstZL-vb8Lq_ktLgeyr0mR9H7eIrkDVP" type="application/pdf" />
     <div className='items-center text-center'>
     <button className='p-2 mb-4 mt-2 mb-2 text-center'><a href="https://drive.google.com/file/d/1-Ems5JioDmkpgfgVomtU1KAVtjJnizWY/view?usp=sharing">Download Resume</a></button>
     </div>
