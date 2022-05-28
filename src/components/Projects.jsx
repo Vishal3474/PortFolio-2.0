@@ -150,7 +150,8 @@ const Projects = () => {
                 </h5>
               </a>
               <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                This is Description
+                Dashboard i make Social Media like a (FaceBook, Twitter ,
+                discord) Ui/Ux Build In Tailwind Css
               </p>
               <a
                 href="https://create-dashboard.netlify.app/"
@@ -173,7 +174,7 @@ const Projects = () => {
             <div class="p-5">
               <a href="https://assignment-34-create-ask-jud-clone-vishal3474.codeyogiteam.repl.co/">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  Ask_Jud
+                  Ask_CodeYogi
                 </h5>
               </a>
               <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
@@ -206,9 +207,8 @@ const Projects = () => {
                 </h5>
               </a>
               <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Unit of Conversion is a multi-step process involving
-                multiplication or division by a Measurment Units Conveter, can
-                all be measured in various ways.
+                An efficient educational game for kids. Perfect for kids to help
+                them learn multiplication tables.
               </p>
               <a
                 href="https://assignment-28-show-tables-of-a-range-of-numbers-vishal3474.codeyogiteam.repl.co/"
