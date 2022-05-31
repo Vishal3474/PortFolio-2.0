@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="https://cdn.discordapp.com/attachments/944189291427430421/964898796561641512/logo.png" />
+    <link
+      rel="icon"
+      href="https://cdn.discordapp.com/attachments/944189291427430421/964898796561641512/logo.png"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -10,14 +13,31 @@
       content="Portfolio (Vishal) created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
- 
+
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    
+
     <title>Vishal | Portfolio</title>
+    <style>
+      ::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 5px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: rgb(0, 183, 255);
+        border-radius: 5px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #420909;
+      }
+    </style>
   </head>
   <body>
-  
     <div id="root"></div>
-
   </body>
 </html>
