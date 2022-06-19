@@ -53,7 +53,7 @@ const About = () => {
                   <a href="tel:+919520630066">
                     <img
                       alt="Call"
-                      src="https://www.pngkey.com/png/detail/60-603850_call-us-now-button-camerabewaking.png"
+                      src="https://cdn.discordapp.com/attachments/944189291427430421/987951071194402847/60-603850_call-us-now-button-camerabewaking-removebg-preview.png"
                       width="100"
                       height="50"
                     />
