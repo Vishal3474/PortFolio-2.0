@@ -44,7 +44,7 @@ const About = () => {
                     <img
                       alt="Call"
                       src="https://www.pngkey.com/png/detail/60-603850_call-us-now-button-camerabewaking.png"
-                      width="80"
+                      width="100"
                       height="50"
                     />
                   </a>
