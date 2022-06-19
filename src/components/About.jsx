@@ -39,7 +39,7 @@ const About = () => {
                   9520630066
                 </dd>
                 <a
-                  class=" bg-indigo-500 text-white p-2 rounded-md"
+                  class=" bg-indigo-500 text-white px-2 py-1 rounded-md"
                   href="tel:+919520630066"
                 >
                   {" "}
