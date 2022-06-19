@@ -38,7 +38,12 @@ const About = () => {
                 <dd className="mt-1 text-sm text-indigo-500 sm:mt-0 sm:col-span-2">
                   9520630066
                 </dd>
-                <a href="tel:+919520630066">Call</a>
+                <a
+                  className=" bg-indigo-500 text-white p-5"
+                  href="tel:+919520630066"
+                >
+                  Call
+                </a>
               </div>
 
               <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
