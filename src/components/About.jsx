@@ -27,7 +27,7 @@ const About = () => {
                   Email address
                 </dt>
                 <div className="flex text-center items-center">
-                  <dd className="mt-1 text-sm text-indigo-500 sm:mt-0 sm:col-span-2 mr-4">
+                  <dd className="mt-1 text-sm text-indigo-500 sm:mt-0 sm:col-span-2 mr-10">
                     VishalKumar3474@gmail.com
                   </dd>
                   <a href="mailto:vishalkumar3474@gmail.com">
@@ -46,7 +46,7 @@ const About = () => {
                   Mobile No.-
                 </dt>
                 <div className="flex text-center items-center">
-                  <dd className="mt-1 text-sm text-indigo-500 sm:mt-0 sm:col-span-2 mr-4">
+                  <dd className="mt-1 text-sm text-indigo-500 sm:mt-0 sm:col-span-2 mr-10">
                     9520630066
                   </dd>
 
