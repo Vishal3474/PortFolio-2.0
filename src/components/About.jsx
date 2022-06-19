@@ -27,13 +27,13 @@ const About = () => {
                   Email address
                 </dt>
                 <div className="flex text-center items-center">
-                  <dd className="mt-1 text-sm text-indigo-500 sm:mt-0 sm:col-span-2">
+                  <dd className="mt-1 text-sm text-indigo-500 sm:mt-0 sm:col-span-2 mr-4">
                     VishalKumar3474@gmail.com
                   </dd>
                   <a href="mailto:vishalkumar3474@gmail.com">
                     <img
                       alt="Send Email"
-                      src="https://cdn.discordapp.com/attachments/944189291427430421/987948268426244116/email.png"
+                      src="https://cdn.discordapp.com/attachments/944189291427430421/987949772642066473/email-removebg-preview.png"
                       width="50"
                       height="50"
                     />
