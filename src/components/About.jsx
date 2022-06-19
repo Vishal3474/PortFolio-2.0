@@ -51,8 +51,8 @@ const About = () => {
                   <a href="https://wa.me/919520630066">
                     <img
                       alt="Whatsapp Me"
-                      src="https://cdn.discordapp.com/attachments/944189291427430421/987938497597960202/372108180_WHATSAPP_ICON_400.gif"
-                      width="40"
+                      src="https://mrgultimus2.in/wp-content/uploads/2022/01/whatsapp.png"
+                      width="70"
                       height="50"
                     />
                   </a>
