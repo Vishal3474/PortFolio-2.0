@@ -47,6 +47,14 @@ const About = () => {
                     height="50"
                   />
                 </a>
+                <a href="https://wa.me/919520630066">
+                  <img
+                    alt="Whatsapp Me"
+                    src="https://cdn.discordapp.com/attachments/944189291427430421/987938497597960202/372108180_WHATSAPP_ICON_400.gif"
+                    width="40"
+                    height="50"
+                  />
+                </a>
               </div>
 
               <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
