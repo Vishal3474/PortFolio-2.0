@@ -26,9 +26,19 @@ const About = () => {
                 <dt className="text-sm font-medium text-gray-500">
                   Email address
                 </dt>
-                <dd className="mt-1 text-sm text-indigo-500 sm:mt-0 sm:col-span-2">
-                  VishalKumar3474@gmail.com
-                </dd>
+                <div className="flex text-center items-center">
+                  <dd className="mt-1 text-sm text-indigo-500 sm:mt-0 sm:col-span-2">
+                    VishalKumar3474@gmail.com
+                  </dd>
+                  <a href="mailto:vishalkumar3474@gmail.com">
+                    <img
+                      alt="Send Email"
+                      src="https://cdn.discordapp.com/attachments/944189291427430421/987948268426244116/email.png"
+                      width="50"
+                      height="50"
+                    />
+                  </a>
+                </div>
               </div>
 
               <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
