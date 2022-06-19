@@ -38,12 +38,14 @@ const About = () => {
                 <dd className="mt-1 text-sm text-indigo-500 sm:mt-0 sm:col-span-2">
                   9520630066
                 </dd>
-                <a
-                  class=" bg-indigo-500 text-white px-2 py-1 rounded-md"
-                  href="tel:+919520630066"
-                >
-                  {" "}
-                  Call{" "}
+
+                <a href="tel:+919520630066">
+                  <img
+                    alt="Call"
+                    src="https://cdn.discordapp.com/attachments/944189291427430421/987935603553357874/png-clipart-blue-call-icon-dialer-android-google-play-telephone-phone-blue-text-removebg-preview.png"
+                    width="30"
+                    height="50"
+                  />
                 </a>
               </div>
 
