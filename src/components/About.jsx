@@ -35,7 +35,7 @@ const About = () => {
                 <dt className="text-sm font-medium text-gray-500">
                   Mobile No.-
                 </dt>
-                <div className="flex">
+                <div className="flex text-center items-center">
                   <dd className="mt-1 text-sm text-indigo-500 sm:mt-0 sm:col-span-2">
                     9520630066
                   </dd>
@@ -43,8 +43,8 @@ const About = () => {
                   <a href="tel:+919520630066">
                     <img
                       alt="Call"
-                      src="https://cdn.discordapp.com/attachments/944189291427430421/987935603553357874/png-clipart-blue-call-icon-dialer-android-google-play-telephone-phone-blue-text-removebg-preview.png"
-                      width="30"
+                      src="https://www.pngkey.com/png/detail/60-603850_call-us-now-button-camerabewaking.png"
+                      width="80"
                       height="50"
                     />
                   </a>
