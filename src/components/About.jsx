@@ -36,7 +36,7 @@ const About = () => {
                   Mobile No.-
                 </dt>
                 <div className="flex text-center items-center">
-                  <dd className="mt-1 text-sm text-indigo-500 sm:mt-0 sm:col-span-2">
+                  <dd className="mt-1 text-sm text-indigo-500 sm:mt-0 sm:col-span-2 mr-4">
                     9520630066
                   </dd>
 
