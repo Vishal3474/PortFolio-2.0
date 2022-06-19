@@ -35,26 +35,28 @@ const About = () => {
                 <dt className="text-sm font-medium text-gray-500">
                   Mobile No.-
                 </dt>
-                <dd className="mt-1 text-sm text-indigo-500 sm:mt-0 sm:col-span-2">
-                  9520630066
-                </dd>
+                <div className="flex">
+                  <dd className="mt-1 text-sm text-indigo-500 sm:mt-0 sm:col-span-2">
+                    9520630066
+                  </dd>
 
-                <a href="tel:+919520630066">
-                  <img
-                    alt="Call"
-                    src="https://cdn.discordapp.com/attachments/944189291427430421/987935603553357874/png-clipart-blue-call-icon-dialer-android-google-play-telephone-phone-blue-text-removebg-preview.png"
-                    width="30"
-                    height="50"
-                  />
-                </a>
-                <a href="https://wa.me/919520630066">
-                  <img
-                    alt="Whatsapp Me"
-                    src="https://cdn.discordapp.com/attachments/944189291427430421/987938497597960202/372108180_WHATSAPP_ICON_400.gif"
-                    width="40"
-                    height="50"
-                  />
-                </a>
+                  <a href="tel:+919520630066">
+                    <img
+                      alt="Call"
+                      src="https://cdn.discordapp.com/attachments/944189291427430421/987935603553357874/png-clipart-blue-call-icon-dialer-android-google-play-telephone-phone-blue-text-removebg-preview.png"
+                      width="30"
+                      height="50"
+                    />
+                  </a>
+                  <a href="https://wa.me/919520630066">
+                    <img
+                      alt="Whatsapp Me"
+                      src="https://cdn.discordapp.com/attachments/944189291427430421/987938497597960202/372108180_WHATSAPP_ICON_400.gif"
+                      width="40"
+                      height="50"
+                    />
+                  </a>
+                </div>
               </div>
 
               <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
