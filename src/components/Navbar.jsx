@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
-
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
@@ -13,11 +11,17 @@ const Navbar = () => {
     <div className="w-screen h-[80px] z-10 bg-zinc-200 fixed drop-shadow-lg">
       <div className="px-2 flex justify-between items-center w-full h-full">
         <div className="flex items-center">
-    
-    <img class="w-20 h-16" src="https://cdn.discordapp.com/attachments/944189291427430421/964898796561641512/logo.png" alt="logo" />
-          
-    <h1 class="text-purple-500 font-mono text-xl mr-96  sm:mr-16 " > Vishal | Portfolio </h1>
-    
+          <img
+            class="w-20 h-16"
+            src="https://cdn.discordapp.com/attachments/944189291427430421/964898796561641512/logo.png"
+            alt="logo"
+          />
+
+          <h1 class="text-purple-500 font-mono text-xl mr-96  sm:mr-16 ">
+            {" "}
+            Vishal | Portfolio{" "}
+          </h1>
+
           <ul className="hidden md:flex">
             <li>
               <Link to="home" smooth={true} duration={500}>
