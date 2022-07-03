@@ -9,6 +9,10 @@ import {
 } from "react-icons/fa";
 
 const Footer = () => {
+  const BtnClick = () => {
+    alert("Subscribed SuccessFully!");
+  };
+
   return (
     <div className="w-full mt-24 bg-slate-900 text-gray-300  py-y px-2">
       <div className=" md:grid-cols-6 border-b-2 items-center border-gray-600">
@@ -23,7 +27,9 @@ const Footer = () => {
               type="email"
               placeholder="Enter email.."
             />
-            <button className="p-2 mb-4">Subscribe</button>
+            <button onClick={BtnClick} className="p-2 mb-4">
+              Subscribe
+            </button>
           </form>
         </div>
       </div>
