@@ -6,7 +6,7 @@ const Front = () => {
   return (
     <div
       name="home"
-      className="w-full h-screen bg-zinc-200 flex flex-col justify-between bg-[url('https://cdn.discordapp.com/attachments/944189291427430421/980289298358239232/collage_maker_app01.jpg')]"
+      className="w-full h-screen bg-zinc-200 flex flex-col justify-between bg-[url('https://giant.gfycat.com/BronzeAchingFantail.mp4')]"
     >
       <div className="grid md:grid-cols-2 max-w-[1240px] m-auto">
         <div className="flex flex-col justify-center md:items-start w-full px-2 py-8">
