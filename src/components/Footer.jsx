@@ -32,13 +32,21 @@ const Footer = () => {
         <p className="py-4"> Made With ❤ at CodeYogi</p>
         <p className="py-4"> Copyright © 2022 Vishal All rights reserved</p>
         <div className="flex justify-between sm:w-[300px] pt-4 text-2xl">
-          <a href="https://app.codeyogi.io/login/">
+          <a href="https://www.facebook.com">
             <FaFacebook />
           </a>
-          <FaInstagram />
-          <FaTwitter />
-          <FaTwitch />
-          <FaGithub />
+          <a href="https://www.instagram.com/its_vi.shal/">
+            <FaInstagram />
+          </a>
+          <a href="https://twitter.com/Vishal3474">
+            <FaTwitter />
+          </a>
+          <a href="https://www.twitch.tv/its_vishal">
+            <FaTwitch />
+          </a>
+          <a href="https://github.com/Vishal3474">
+            <FaGithub />
+          </a>
         </div>
       </div>
     </div>
