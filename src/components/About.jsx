@@ -1,5 +1,5 @@
 import React from "react";
-import { PaperClipIcon } from "@heroicons/react/solid";
+
 const About = () => {
   return (
     <div name="about" className="w-full my-32">
