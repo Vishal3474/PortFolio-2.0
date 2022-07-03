@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 
 import {
   FaFacebook,
@@ -8,7 +9,12 @@ import {
   FaTwitch,
 } from "react-icons/fa";
 
-const Footer = () => {
+function Footer() {
+  const [inputValue, SetInputValue] = useState("");
+  const inputChange = (event) => {
+    SetInputValue(event.target.value);
+  };
+
   const BtnClick = () => {
     alert("Subscribed SuccessFully!");
   };
@@ -23,11 +29,17 @@ const Footer = () => {
           </p>
           <form className="flex flex-col sm:flex-row">
             <input
+              value={inputValue}
+              onChange={inputChange}
               className="w-full p-2 mr-4 rounded-md mb-4"
               type="email"
               placeholder="Enter email.."
             />
-            <button onClick={BtnClick} className="p-2 mb-4">
+            <button
+              disabled={inputValue.length < 1}
+              onClick={BtnClick}
+              className="p-2 mb-4 bg-indigo-700 disabled:bg-gray-700"
+            >
               Subscribe
             </button>
           </form>
@@ -57,6 +69,6 @@ const Footer = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Footer;
