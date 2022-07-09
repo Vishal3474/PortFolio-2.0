@@ -21,7 +21,7 @@ const Projects = () => {
               />
             </a>
             <div class="p-5">
-              <a href="https://todo-vishal.netlify.app/">
+              <a href="https://todo-vishal.netlify.app/" target="_blank">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   Todo_App
                 </h5>
@@ -32,7 +32,8 @@ const Projects = () => {
                 Show Number Of Todo Task
               </p>
               <a
-                href="https://todo-vishal.netlify.app/"
+                href="https://todo-vishal.netlify.app/ "
+                target="_blank"
                 class="inline-flex items-center rounded-lg bg-indigo-700 py-2 px-3 text-center text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 {" "}
@@ -42,7 +43,7 @@ const Projects = () => {
           </div>
 
           <div class="max-w-sm rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
-            <a href="https://clonecodeyogi.netlify.app/">
+            <a href="https://clonecodeyogi.netlify.app/" target="_blank">
               <img
                 class="rounded-t-lg"
                 src="https://cdn.discordapp.com/attachments/944189291427430421/979795934974206012/CodeYogi.png"
@@ -50,7 +51,7 @@ const Projects = () => {
               />
             </a>
             <div class="p-5">
-              <a href="https://clonecodeyogi.netlify.app/">
+              <a href="https://clonecodeyogi.netlify.app/" target="_blank">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   CodeYogi_Clone
                 </h5>
@@ -61,6 +62,7 @@ const Projects = () => {
               </p>
               <a
                 href="https://clonecodeyogi.netlify.app/"
+                target="_blank"
                 class="inline-flex items-center rounded-lg bg-indigo-700 py-2 px-3 text-center text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 {" "}
@@ -95,7 +97,7 @@ const Projects = () => {
                 CodeYogi 😜
               </p>
               <a
-                href="https://bit.ly/3Gxrxmj
+                href="https://bit.ly/3Gxrxmj >
 "
                 class="inline-flex items-center rounded-lg bg-indigo-700 py-2 px-3 text-center text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
