@@ -59,7 +59,7 @@ const About = () => {
                       height="50"
                     />
                   </a>
-                  <a href="https://wa.me/919520630066">
+                  <a href="https://wa.me/919520630066" target="_blank">
                     <img
                       alt="Whatsapp Me"
                       src="https://mrgultimus2.in/wp-content/uploads/2022/01/whatsapp.png"

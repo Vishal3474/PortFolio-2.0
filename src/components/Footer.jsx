@@ -50,19 +50,19 @@ function Footer() {
         <p className="py-4"> Made With ❤ at CodeYogi</p>
         <p className="py-4"> Copyright © 2022 Vishal All rights reserved</p>
         <div className="flex justify-between sm:w-[300px] pt-4 text-2xl">
-          <a href="https://www.facebook.com">
+          <a href="https://www.facebook.com" target="_blank">
             <FaFacebook />
           </a>
-          <a href="https://www.instagram.com/its_vi.shal/">
+          <a href="https://www.instagram.com/its_vi.shal/" target="_blank">
             <FaInstagram />
           </a>
-          <a href="https://twitter.com/Vishal3474">
+          <a href="https://twitter.com/Vishal3474" target="_blank">
             <FaTwitter />
           </a>
-          <a href="https://www.twitch.tv/its_vishal">
+          <a href="https://www.twitch.tv/its_vishal" target="_blank">
             <FaTwitch />
           </a>
-          <a href="https://github.com/Vishal3474">
+          <a href="https://github.com/Vishal3474" target="_blank">
             <FaGithub />
           </a>
         </div>
