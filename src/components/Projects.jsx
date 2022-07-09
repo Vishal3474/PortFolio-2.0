@@ -97,7 +97,7 @@ const Projects = () => {
                 CodeYogi 😜
               </p>
               <a
-                href="https://bit.ly/3Gxrxmj >
+                href="https://bit.ly/3Gxrxmj 
 "
                 class="inline-flex items-center rounded-lg bg-indigo-700 py-2 px-3 text-center text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
@@ -108,7 +108,10 @@ const Projects = () => {
           </div>
 
           <div class="max-w-sm rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
-            <a href="https://assignment-26-unit-converter-without-prompt-vishal3474.codeyogiteam.repl.co/">
+            <a
+              href="https://assignment-26-unit-converter-without-prompt-vishal3474.codeyogiteam.repl.co/"
+              target="_blank"
+            >
               <img
                 class="rounded-t-lg"
                 src="https://cdn.discordapp.com/attachments/944189291427430421/979805699133571132/Unit.png"
@@ -116,7 +119,10 @@ const Projects = () => {
               />
             </a>
             <div class="p-5">
-              <a href="https://assignment-26-unit-converter-without-prompt-vishal3474.codeyogiteam.repl.co/">
+              <a
+                href="https://assignment-26-unit-converter-without-prompt-vishal3474.codeyogiteam.repl.co/"
+                target="_blank"
+              >
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   Unit_Converter
                 </h5>
@@ -128,6 +134,7 @@ const Projects = () => {
               </p>
               <a
                 href="https://assignment-26-unit-converter-without-prompt-vishal3474.codeyogiteam.repl.co/"
+                target="_blank"
                 class="inline-flex items-center rounded-lg bg-indigo-700 py-2 px-3 text-center text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 {" "}
@@ -137,7 +144,7 @@ const Projects = () => {
           </div>
 
           <div class="max-w-sm rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
-            <a href="https://create-dashboard.netlify.app/">
+            <a href="https://create-dashboard.netlify.app/" target="_blank">
               <img
                 class="rounded-t-lg"
                 src="https://cdn.discordapp.com/attachments/944189291427430421/979805698550542416/DashBoard.png"
@@ -145,7 +152,7 @@ const Projects = () => {
               />
             </a>
             <div class="p-5">
-              <a href="https://create-dashboard.netlify.app/">
+              <a href="https://create-dashboard.netlify.app/" target="_blank">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   Create_Dashboard
                 </h5>
@@ -156,6 +163,7 @@ const Projects = () => {
               </p>
               <a
                 href="https://create-dashboard.netlify.app/"
+                target="_blank"
                 class="inline-flex items-center rounded-lg bg-indigo-700 py-2 px-3 text-center text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 {" "}
@@ -165,7 +173,10 @@ const Projects = () => {
           </div>
 
           <div class="max-w-sm rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
-            <a href="https://assignment-34-create-ask-jud-clone-vishal3474.codeyogiteam.repl.co/">
+            <a
+              href="https://assignment-34-create-ask-jud-clone-vishal3474.codeyogiteam.repl.co/"
+              target="_blank"
+            >
               <img
                 class="rounded-t-lg"
                 src="https://cdn.discordapp.com/attachments/944189291427430421/979814205039460402/Ask_CodeYogi.png"
@@ -173,7 +184,10 @@ const Projects = () => {
               />
             </a>
             <div class="p-5">
-              <a href="https://assignment-34-create-ask-jud-clone-vishal3474.codeyogiteam.repl.co/">
+              <a
+                href="https://assignment-34-create-ask-jud-clone-vishal3474.codeyogiteam.repl.co/"
+                target="_blank"
+              >
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   Ask_CodeYogi
                 </h5>
@@ -185,6 +199,7 @@ const Projects = () => {
               </p>
               <a
                 href="https://assignment-34-create-ask-jud-clone-vishal3474.codeyogiteam.repl.co/"
+                target="_blank"
                 class="inline-flex items-center rounded-lg bg-indigo-700 py-2 px-3 text-center text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 {" "}
@@ -194,7 +209,10 @@ const Projects = () => {
           </div>
 
           <div class="max-w-sm rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
-            <a href="https://assignment-28-show-tables-of-a-range-of-numbers-vishal3474.codeyogiteam.repl.co/">
+            <a
+              href="https://assignment-28-show-tables-of-a-range-of-numbers-vishal3474.codeyogiteam.repl.co/"
+              target="_blank"
+            >
               <img
                 class="rounded-t-lg"
                 src="https://cdn.discordapp.com/attachments/944189291427430421/979814205383376926/Find_Table.png"
@@ -202,7 +220,10 @@ const Projects = () => {
               />
             </a>
             <div class="p-5">
-              <a href="https://assignment-28-show-tables-of-a-range-of-numbers-vishal3474.codeyogiteam.repl.co/">
+              <a
+                href="https://assignment-28-show-tables-of-a-range-of-numbers-vishal3474.codeyogiteam.repl.co/"
+                target="_blank"
+              >
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   Find_Table
                 </h5>
@@ -213,6 +234,7 @@ const Projects = () => {
               </p>
               <a
                 href="https://assignment-28-show-tables-of-a-range-of-numbers-vishal3474.codeyogiteam.repl.co/"
+                target="_blank"
                 class="inline-flex items-center rounded-lg bg-indigo-700 py-2 px-3 text-center text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 {" "}
@@ -222,7 +244,10 @@ const Projects = () => {
           </div>
 
           <div class="max-w-sm rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
-            <a href="https://assignment-29-create-team-list-page-using-react-vishal3474.codeyogiteam.repl.co/">
+            <a
+              href="https://assignment-29-create-team-list-page-using-react-vishal3474.codeyogiteam.repl.co/"
+              target="_blank"
+            >
               <img
                 class="rounded-t-lg"
                 src="https://cdn.discordapp.com/attachments/944189291427430421/979814205916057610/Meet_Team_Card.png"
@@ -230,7 +255,10 @@ const Projects = () => {
               />
             </a>
             <div class="p-5">
-              <a href="https://assignment-29-create-team-list-page-using-react-vishal3474.codeyogiteam.repl.co/">
+              <a
+                href="https://assignment-29-create-team-list-page-using-react-vishal3474.codeyogiteam.repl.co/"
+                target="_blank"
+              >
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   Meet_Team_Card
                 </h5>
@@ -241,6 +269,7 @@ const Projects = () => {
               </p>
               <a
                 href="https://assignment-29-create-team-list-page-using-react-vishal3474.codeyogiteam.repl.co/"
+                target="_blank"
                 class="inline-flex items-center rounded-lg bg-indigo-700 py-2 px-3 text-center text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 {" "}
