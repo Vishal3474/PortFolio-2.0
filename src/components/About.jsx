@@ -32,6 +32,7 @@ const About = () => {
                   </dd>
                   <a href="mailto:vishalkumar3474@gmail.com">
                     <img
+                      className="animate-bounce"
                       alt="Send Email"
                       src="https://cdn.discordapp.com/attachments/944189291427430421/987949772642066473/email-removebg-preview.png"
                       width="50"
@@ -52,7 +53,7 @@ const About = () => {
 
                   <a href="tel:+919520630066">
                     <img
-                      className="mr-2"
+                      className="mr-2 animate-bounce"
                       alt="Call"
                       src="https://cdn.discordapp.com/attachments/944189291427430421/987951071194402847/60-603850_call-us-now-button-camerabewaking-removebg-preview.png"
                       width="100"
@@ -61,6 +62,7 @@ const About = () => {
                   </a>
                   <a href="https://wa.me/919520630066" target="_blank">
                     <img
+                      className="animate-bounce"
                       alt="Whatsapp Me"
                       src="https://mrgultimus2.in/wp-content/uploads/2022/01/whatsapp.png"
                       width="70"
