@@ -49,7 +49,7 @@ function Footer() {
       <div className="flex flex-col max-w-[1240px] px-2 py-4 mx-auto justify-between sm:flex-row text-center text-gray-500">
         <p className="py-4"> Made With ❤ at CodeYogi</p>
         <p className="py-4"> Copyright © 2022 Vishal All rights reserved</p>
-        <div className="flex justify-between sm:w-[300px] pt-4 text-2xl">
+        <div className="flex justify-between sm:w-[300px] pt-4 text-2xl motion-safe:animate-spin">
           <a href="https://www.facebook.com" target="_blank">
             <FaFacebook />
           </a>
