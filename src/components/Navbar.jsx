@@ -21,7 +21,7 @@ const Navbar = () => {
             {" "}
             Vishal | Portfolio{" "}
           </h1>
-
+<div class="ml-auto">
           <ul className="hidden md:flex">
             <li>
               <Link to="home" smooth={true} duration={500}>
@@ -45,6 +45,7 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
+</div>
         </div>
       </div>
 
