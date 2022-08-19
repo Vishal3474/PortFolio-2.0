@@ -44,7 +44,7 @@ const Navbar = () => {
                 Resume
               </Link>
             </li>
-   <li class="text-purple-500 font-bold font-mono">
+   <li class="text-purple-500 font-bold font-mono animate-bounce">
             
             Call +91 9520630066
             </li>
