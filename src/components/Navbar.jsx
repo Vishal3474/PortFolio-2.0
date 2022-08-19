@@ -17,7 +17,7 @@ const Navbar = () => {
             alt="logo"
           />
 
-          <h1 class="text-purple-500 font-mono text-xl mr-96  sm:mr-16 ">
+          <h1 class="text-purple-500 font-mono text-xl   sm:mr-16 ">
             {" "}
             Vishal | Portfolio{" "}
           </h1>
