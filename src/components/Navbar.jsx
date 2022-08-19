@@ -45,7 +45,8 @@ const Navbar = () => {
               </Link>
             
           </ul>
-   <a href="tel:+919520630066">
+
+</div>   <a href="tel:+919520630066">
                     <img
                       className="mr-2 animate-bounce"
                       alt="Call"
@@ -54,7 +55,6 @@ const Navbar = () => {
                       height="50"
                     />
                   </a>
-</div>
         </div>
       </div>
 
