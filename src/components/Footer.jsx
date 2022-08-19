@@ -25,7 +25,7 @@ function Footer() {
         <div className="col-span-2 text-center items-center  md:pt-2">
           <p className="font-bold uppercase">Hiring Me</p>
           <p className="py-4">
-            The latest news, articles, and resources, sent to your inbox weekly.
+            If You Want Hire Me Please send a msg in Text Box .
           </p>
           <form className="flex flex-col sm:flex-row">
             <input
@@ -62,7 +62,7 @@ function Footer() {
             <FaFacebook />
           </a>
           <a
-            className="motion-safe:animate-spin"
+           
             href="https://www.instagram.com/its_vi.shal/"
             target="_blank"
           >
