@@ -20,7 +20,7 @@ function Footer() {
   };
 
   return (
-    <div className="w-full mt-24 bg-slate-900 text-gray-300  py-y px-2">
+    <div className="w-full mt-24 bg-black text-gray-300  py-y px-2">
       <div className=" md:grid-cols-6 border-b-2 items-center border-gray-600">
         <div className="col-span-2 text-center items-center  md:pt-2">
           <p className="font-bold uppercase">Hiring Me</p>
