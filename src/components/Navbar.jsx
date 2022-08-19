@@ -43,7 +43,9 @@ const Navbar = () => {
               <Link to="Resume" smooth={true} offset={-50} duration={500}>
                 Resume
               </Link>
-               <a href="tel:+919520630066">
+            
+          </ul>
+   <a href="tel:+919520630066">
                     <img
                       className="mr-2 animate-bounce"
                       alt="Call"
@@ -52,7 +54,6 @@ const Navbar = () => {
                       height="50"
                     />
                   </a>
-          </ul>
 </div>
         </div>
       </div>
