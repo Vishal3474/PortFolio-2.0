@@ -44,10 +44,10 @@ const Navbar = () => {
                 Resume
               </Link>
             </li>
-   <a class="text-purple-500 font-bold font-mono">
+   <li class="text-purple-500 font-bold font-mono">
             
             Call +91 9520630066
-            </a>
+            </li>
           </ul>
   
 </div>   
