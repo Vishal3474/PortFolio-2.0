@@ -22,7 +22,7 @@ const Navbar = () => {
             Vishal | Portfolio{" "}
           </h1>
 <div class="ml-96">
-          <ul className="hidden md:flex">
+          <ul className="hidden md:flex text-center">
             <li>
               <Link to="home" smooth={true} duration={500}>
                 Home
