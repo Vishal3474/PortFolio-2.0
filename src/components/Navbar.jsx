@@ -44,6 +44,9 @@ const Navbar = () => {
                 Resume
               </Link>
             </li>
+  <li>
+              +919520630066
+            </li>
           </ul>
 </div>
         </div>
