@@ -45,7 +45,7 @@ const Navbar = () => {
               </Link>
             </li>
   <li class="text-purple-500 font-bold font-mono " >
-          Call Me    +919520630066
+          Call     +919520630066
             </li>
           </ul>
 </div>
