@@ -44,7 +44,7 @@ const Navbar = () => {
                 Resume
               </Link>
             </li>
-  <li>
+  <li class="text-purple-500 font-bold" >
           Call    +919520630066
             </li>
           </ul>
