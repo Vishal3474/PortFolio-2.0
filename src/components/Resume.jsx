@@ -8,7 +8,7 @@ const Resume = () => {
       </h1>
 
       <div class=" border border-2 border-indigo-400 mr-20 ml-20 cursor-wait">
-        <img src="https://cdn.discordapp.com/attachments/944189291427430421/979783635404206112/Vishal_InternshalaResume_2_page-0001.jpg"></img>
+        <img src="https://cdn.discordapp.com/attachments/1031605156996972574/1042409683597672469/vishal_CV_1.jpg"></img>
       </div>
       <div className="items-center text-center">
         <button className="p-2 mb-4 mt-2 mb-2 text-center cursor-pointer ">
