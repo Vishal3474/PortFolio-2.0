@@ -13,7 +13,7 @@ const Resume = () => {
       <div className="items-center text-center">
         <button className="p-2 mb-4 mt-2 mb-2 text-center cursor-pointer ">
           <a
-            href="https://drive.google.com/file/d/1fvADDl6MmPLGAKhw2lMH4eKE7DGqFSkC/view?usp=sharing"
+            href="https://drive.google.com/file/d/1gu9s0YixybAuwQA_erd1rrMUFYceeGNW/view"
             target="_blank"
           >
             Download Resume
