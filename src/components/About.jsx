@@ -64,7 +64,7 @@ const About = () => {
                     <img
                       className="animate-bounce"
                       alt="Whatsapp Me"
-                      src="https://mrgultimus2.in/wp-content/uploads/2022/01/whatsapp.png"
+                      src="https://cdn.discordapp.com/attachments/998764908479004743/1084473275830251541/174879.png"
                       width="70"
                       height="50"
                     />
