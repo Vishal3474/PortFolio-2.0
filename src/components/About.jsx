@@ -65,8 +65,8 @@ const About = () => {
                       className="animate-bounce"
                       alt="Whatsapp Me"
                       src="https://cdn.discordapp.com/attachments/998764908479004743/1084473275830251541/174879.png"
-                      width="70"
-                      height="50"
+                      width="35"
+                      height="25"
                     />
                   </a>
                 </div>
