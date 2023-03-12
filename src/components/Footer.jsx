@@ -52,7 +52,7 @@ function Footer() {
           Made With <span >❤</span> at
           CodeYogi
         </p>
-        <p className="py-4"> Copyright © 2022 Vishal All rights reserved</p>
+        <p className="py-4"> Copyright © 2023 Vishal All rights reserved</p>
         <div className="flex justify-between sm:w-[300px] pt-4 text-2xl ">
           <a
             
