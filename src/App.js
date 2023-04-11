@@ -9,13 +9,13 @@ import Front from "./components/Front";
 function App() {
   return (
     <>
-      <Navbar />
-      <Front />
+      {/* <Navbar /> */}
+      {/* <Front /> */}
       <About />
 
       <Projects />
       <Resume />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
