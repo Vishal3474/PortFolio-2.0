@@ -21,8 +21,7 @@ const showcaseCards = [
     subtitle:
       "Proprietary higher education ecosystem founded by Vishal Singh connecting universities with prospective students, automated CRM lead pipelines, course comparisons, and real-time admission tracking.",
     stack: ["React.js", "Next.js", "Node.js", "Tailwind CSS", "REST APIs", "Cloud Infra"],
-    image:
-      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/uniportal-hero.jpg",
     client: "Founded Startup",
     badge: "Founder & Lead Architect",
     link: "https://uniportal.in",
@@ -352,29 +351,29 @@ const Projects = () => {
                     transform: `rotateY(${rotY}deg)`,
                     transformOrigin: "center center",
                   }}
-                  className={`relative min-w-0 h-full rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer shadow-2xl transition-[flex,transform] duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] border ${
-                    isActive
-                      ? "border-purple-400/40 shadow-purple-500/10"
-                      : "border-white/10 opacity-75 hover:opacity-100"
-                  } group`}
+                  className={`relative min-w-0 h-full rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer shadow-2xl transition-[flex,transform] duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] border ${isActive
+                    ? "border-purple-400/40 shadow-purple-500/10"
+                    : "border-white/10 opacity-75 hover:opacity-100"
+                    } group`}
                 >
                   {/* Background Image with Dynamic Brightness & Zoom */}
                   <img
                     src={card.image}
-                    alt={card.fullTitle}
+                    alt={card.shortTitle}
+                    onError={(e) => {
+                      e.currentTarget.src = "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1200&q=80";
+                    }}
                     draggable="false"
-                    className={`absolute inset-0 h-full w-full object-cover object-center transition-all duration-700 ease-out ${
-                      isActive
-                        ? "scale-105 brightness-95"
-                        : "scale-100 brightness-50 group-hover:brightness-75"
-                    }`}
+                    className={`absolute inset-0 h-full w-full object-cover object-center transition-all duration-700 ease-out ${isActive
+                      ? "scale-105 brightness-95"
+                      : "scale-100 brightness-50 group-hover:brightness-75"
+                      }`}
                   />
 
                   {/* High Contrast Gradient Scrim Overlay */}
                   <div
-                    className={`absolute inset-0 bg-gradient-to-t from-[#06080e]/95 via-[#06080e]/60 to-transparent transition-opacity duration-500 pointer-events-none ${
-                      isActive ? "opacity-95" : "opacity-90"
-                    }`}
+                    className={`absolute inset-0 bg-gradient-to-t from-[#06080e]/95 via-[#06080e]/60 to-transparent transition-opacity duration-500 pointer-events-none ${isActive ? "opacity-95" : "opacity-90"
+                      }`}
                   />
 
                   {/* Bottom Content Area */}
@@ -388,22 +387,20 @@ const Projects = () => {
                     <div className="relative mt-2 min-h-[32px] flex items-center">
                       {/* Collapsed Short Title */}
                       <h4
-                        className={`text-base sm:text-lg font-bold text-white tracking-tight truncate transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] ${
-                          isActive
-                            ? "opacity-0 -translate-y-2 absolute pointer-events-none"
-                            : "opacity-100 translate-y-0"
-                        }`}
+                        className={`text-base sm:text-lg font-bold text-white tracking-tight truncate transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] ${isActive
+                          ? "opacity-0 -translate-y-2 absolute pointer-events-none"
+                          : "opacity-100 translate-y-0"
+                          }`}
                       >
                         {card.shortTitle}
                       </h4>
 
                       {/* Active Full Title with Glowing Accent Bar */}
                       <div
-                        className={`flex items-center gap-2.5 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
-                          isActive
-                            ? "opacity-100 translate-y-0 delay-100"
-                            : "opacity-0 translate-y-2 absolute pointer-events-none"
-                        }`}
+                        className={`flex items-center gap-2.5 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${isActive
+                          ? "opacity-100 translate-y-0 delay-100"
+                          : "opacity-0 translate-y-2 absolute pointer-events-none"
+                          }`}
                       >
                         <span className="w-1.5 h-6 bg-gradient-to-b from-purple-400 to-indigo-500 rounded-full shrink-0 shadow-[0_0_12px_rgba(168,85,247,0.8)]" />
                         <h3 className="text-lg sm:text-2xl font-bold text-white tracking-tight leading-snug">
@@ -414,26 +411,23 @@ const Projects = () => {
 
                     {/* Subtitle & Tech Badges - Smooth Grid Expansion */}
                     <div
-                      className={`grid transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
-                        isActive
-                          ? "grid-rows-[1fr] opacity-100 mt-2 delay-100"
-                          : "grid-rows-[0fr] opacity-0 mt-0 pointer-events-none"
-                      }`}
+                      className={`grid transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${isActive
+                        ? "grid-rows-[1fr] opacity-100 mt-2 delay-100"
+                        : "grid-rows-[0fr] opacity-0 mt-0 pointer-events-none"
+                        }`}
                     >
                       <div className="overflow-hidden">
                         <p
-                          className={`text-xs sm:text-sm text-slate-300 font-normal leading-relaxed pl-4 max-w-xl transition-all duration-500 ${
-                            isActive ? "translate-y-0 opacity-100 delay-150" : "translate-y-2 opacity-0"
-                          }`}
+                          className={`text-xs sm:text-sm text-slate-300 font-normal leading-relaxed pl-4 max-w-xl transition-all duration-500 ${isActive ? "translate-y-0 opacity-100 delay-150" : "translate-y-2 opacity-0"
+                            }`}
                         >
                           {card.subtitle}
                         </p>
 
                         {/* Tech Stack Pills & Link in Active Card */}
                         <div
-                          className={`mt-4 pl-4 flex flex-wrap gap-2 items-center transition-all duration-500 ${
-                            isActive ? "translate-y-0 opacity-100 delay-200" : "translate-y-2 opacity-0"
-                          }`}
+                          className={`mt-4 pl-4 flex flex-wrap gap-2 items-center transition-all duration-500 ${isActive ? "translate-y-0 opacity-100 delay-200" : "translate-y-2 opacity-0"
+                            }`}
                         >
                           {card.stack.map((item, sIdx) => (
                             <span
@@ -489,11 +483,10 @@ const Projects = () => {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 ${
-                activeTab === tab
-                  ? "bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-lg shadow-purple-600/30 scale-105"
-                  : "bg-white/[0.04] text-slate-400 hover:text-white hover:bg-white/[0.08] border border-white/[0.06]"
-              }`}
+              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 ${activeTab === tab
+                ? "bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-lg shadow-purple-600/30 scale-105"
+                : "bg-white/[0.04] text-slate-400 hover:text-white hover:bg-white/[0.08] border border-white/[0.06]"
+                }`}
             >
               {tab}
             </button>

@@ -99,12 +99,12 @@ $ deploy --target production --now
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 w-full">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          
+
           {/* ========================================================================= */}
           {/* LEFT COLUMN: HERO HEADLINE, BIO, STACK BADGES & DYNAMIC CTAS              */}
           {/* ========================================================================= */}
           <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left">
-            
+
             {/* Status Live Pill */}
             <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-gradient-to-r from-purple-500/15 via-indigo-500/10 to-emerald-500/10 border border-purple-500/30 text-purple-200 text-xs sm:text-sm font-medium mb-6 shadow-[0_0_25px_rgba(168,85,247,0.18)] backdrop-blur-md">
               <span className="relative flex h-2.5 w-2.5">
@@ -157,7 +157,7 @@ $ deploy --target production --now
 
             {/* Action Buttons with High-Conversion Styling */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3.5 mb-10 w-full sm:w-auto">
-              
+
               {/* Primary CTA: Book 1:1 Call */}
               <a
                 href="https://app.1hourdeveloper.com/browseDeveloper/bookDeveloper?d=Vishal+V-3"
@@ -240,7 +240,7 @@ $ deploy --target production --now
           {/* ========================================================================= */}
           <div className="lg:col-span-5 flex justify-center">
             <div className="relative w-full max-w-lg">
-              
+
               {/* Outer Radiant Glow */}
               <div className="absolute -inset-1.5 rounded-3xl bg-gradient-to-r from-purple-600 via-indigo-600 to-cyan-500 opacity-25 blur-2xl"></div>
 
@@ -305,10 +305,10 @@ $ deploy --target production --now
                   </div>
                 </div>
               </div>
-              
+
               {/* Main Interactive Terminal Window Card */}
               <div className="relative glass-card rounded-3xl border border-white/10 p-5 sm:p-6 overflow-hidden shadow-2xl bg-[#090d16]/90 backdrop-blur-2xl">
-                
+
                 {/* Header Window Bar with Tabs */}
                 <div className="flex items-center justify-between pb-4 border-b border-white/[0.08]">
                   <div className="flex items-center gap-2">
@@ -322,33 +322,30 @@ $ deploy --target production --now
                     <button
                       type="button"
                       onClick={() => setActiveTab("typescript")}
-                      className={`px-2.5 py-1 rounded-lg text-[11px] font-mono font-semibold transition-all ${
-                        activeTab === "typescript"
-                          ? "bg-purple-600 text-white shadow"
-                          : "text-slate-400 hover:text-white"
-                      }`}
+                      className={`px-2.5 py-1 rounded-lg text-[11px] font-mono font-semibold transition-all ${activeTab === "typescript"
+                        ? "bg-purple-600 text-white shadow"
+                        : "text-slate-400 hover:text-white"
+                        }`}
                     >
                       vishal.ts
                     </button>
                     <button
                       type="button"
                       onClick={() => setActiveTab("bash")}
-                      className={`px-2.5 py-1 rounded-lg text-[11px] font-mono font-semibold transition-all ${
-                        activeTab === "bash"
-                          ? "bg-purple-600 text-white shadow"
-                          : "text-slate-400 hover:text-white"
-                      }`}
+                      className={`px-2.5 py-1 rounded-lg text-[11px] font-mono font-semibold transition-all ${activeTab === "bash"
+                        ? "bg-purple-600 text-white shadow"
+                        : "text-slate-400 hover:text-white"
+                        }`}
                     >
                       deploy.sh
                     </button>
                     <button
                       type="button"
                       onClick={() => setActiveTab("matrix")}
-                      className={`px-2.5 py-1 rounded-lg text-[11px] font-mono font-semibold transition-all ${
-                        activeTab === "matrix"
-                          ? "bg-purple-600 text-white shadow"
-                          : "text-slate-400 hover:text-white"
-                      }`}
+                      className={`px-2.5 py-1 rounded-lg text-[11px] font-mono font-semibold transition-all ${activeTab === "matrix"
+                        ? "bg-purple-600 text-white shadow"
+                        : "text-slate-400 hover:text-white"
+                        }`}
                     >
                       stack.json
                     </button>
@@ -497,11 +494,11 @@ $ deploy --target production --now
               className="glass-card glass-card-hover rounded-2xl p-5 border border-white/5 text-center relative overflow-hidden group hover:border-purple-500/40"
             >
               <div className="absolute top-0 right-0 w-24 h-24 bg-purple-500/10 rounded-full blur-2xl pointer-events-none group-hover:bg-purple-500/20 transition-all" />
-              
+
               <span className="text-[10px] font-mono uppercase tracking-wider text-purple-300 px-2 py-0.5 rounded-full bg-purple-500/10 border border-purple-500/20 inline-block mb-2">
                 {metric.tag}
               </span>
-              
+
               <div className={`font-heading font-extrabold text-2xl sm:text-3xl bg-gradient-to-r ${metric.color} bg-clip-text text-transparent`}>
                 {metric.num}
               </div>

@@ -5,6 +5,7 @@ import TechMarquee from "./components/TechMarquee";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Skills from "./components/Skills";
+import ServicesFlowingSection from "./components/ServicesFlowingSection";
 import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Resume from "./components/Resume";
@@ -21,6 +22,7 @@ function App() {
         <About />
         <Experience />
         <Skills />
+        <ServicesFlowingSection />
         <Projects />
         <Education />
         <Resume />
