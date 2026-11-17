@@ -1018,12 +1018,15 @@ Cloud/Ops:  AWS EC2/S3 (Advanced), Docker (Advanced), CI/CD GitHub Actions (Adva
     tags: ["MCA", "KL University", "Computer Science", "Algorithms", "Data Structures", "System Architecture", "Continuous Learning"],
     overview: `While practical software experience is vital, deep theoretical computer science principles separate average programmers from high-caliber architects. Vishal has completed his Master of Computer Applications (MCA) curriculum at KL University (Koneru Lakshmaiah Education Foundation), having cleared all examinations and currently awaiting formal degree conferral.
 
-This academic background provides Vishal with a solid command of Algorithms, Data Structures, Operating Systems, Database Management Systems (DBMS), and Distributed Computing—principles he applies daily when engineering high-scale web systems.`,
+This academic background provides Vishal with a solid command of Algorithms, Data Structures, Operating Systems, Database Management Systems (DBMS), and Distributed Computing—principles he applies daily when engineering high-scale web systems. Looking ahead, Vishal is planning to pursue an MBA in Technology Management & Strategic Business Leadership to unify deep full-stack engineering with executive corporate governance and high-impact product leadership.`,
     keyHighlights: [
       "Completed rigorous postgraduate coursework in Advanced Data Structures, Algorithmic Analysis, and Object-Oriented Software Design.",
       "Studied Relational Database Theory, Normalization (1NF through BCNF), and Distributed Query Optimization.",
       "Investigated network protocols (TCP/IP, HTTP/1.1, HTTP/2, WebSocket), concurrency models, and operating system scheduling.",
       "Bridged academic assignments with real-world startups—frequently implementing production systems for Uniportal and agency clients.",
+      "Schooling Foundations: Completed High School (10th) and Intermediate (12th) from GIC Jhankat under the Uttarakhand Board of School Education (UBSE), Ramnagar.",
+      "Vocational Technical Foundations: Completed 1-year trade course at Government ITI (Welder Trade, pursued after graduation), mastering precision fabrication and industrial workshop discipline.",
+      "Active MBA Roadmap: Planning to pursue an MBA in Technology & Business Strategy to complement 5+ years of software engineering and startup founder execution.",
       "Maintained continuous self-driven learning through technical documentation, industry conferences, and hands-on open-source building."
     ],
     technicalArchitecture: {

@@ -399,15 +399,24 @@ const Resume = () => {
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                   <div>
+                    <strong className="text-white">Future Academic Goal:</strong> <span className="text-amber-300 font-semibold">Planned MBA (Tech Leadership & Strategic Management)</span>
+                  </div>
+                  <div>
                     <strong className="text-white">MCA – Data Science:</strong> <span className="text-slate-300">KL University (All Exams Completed • Degree Awaited)</span>
                   </div>
                   <div>
                     <strong className="text-white">Frontend Certification:</strong> <span className="text-slate-300">CodeYogi (Dec 2021 – June 2022, Mentored by IIT Delhi alumni)</span>
                   </div>
                   <div>
+                    <strong className="text-white">ITI – Welder Trade:</strong> <span className="text-slate-300">Govt. ITI (1-Year Vocational Trade Course, Completed after Graduation)</span>
+                  </div>
+                  <div>
                     <strong className="text-white">Bachelor's Degree:</strong> <span className="text-slate-300">Kumaun University, Nainital (July 2017 – Dec 2020)</span>
                   </div>
                   <div>
+                    <strong className="text-white">10th & 12th (Intermediate):</strong> <span className="text-slate-300">GIC Jhankat (Uttarakhand Board UBSE, Ramnagar)</span>
+                  </div>
+                  <div className="sm:col-span-2">
                     <strong className="text-white">Certificates:</strong> <span className="text-slate-300">MySQL RDBMS (2022), Ethical Hacking (Simplilearn, 2026), Generative AI Studio (Google Cloud, 2026)</span>
                   </div>
                 </div>

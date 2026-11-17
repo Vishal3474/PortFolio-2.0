@@ -71,16 +71,20 @@ const KNOWLEDGE_RESPONSES = [
     ]
   },
   {
-    keywords: ["mca", "education", "college", "degree", "kl", "university", "exam"],
-    title: "Academic Background: KL University MCA",
-    reply: `Vishal has completed his **Master of Computer Applications (MCA)** coursework at **KL University** (Koneru Lakshmaiah Education Foundation):
+    keywords: ["mca", "education", "college", "degree", "kl", "university", "exam", "school", "iti", "mba", "10th", "12th"],
+    title: "Complete Academic & Technical Education Journey",
+    reply: `Vishal Singh's comprehensive educational & vocational roadmap:
 
-- **Current Status**: All examinations cleared & completed • Formal degree awaited.
-- **Core Foundations**: Advanced Data Structures, Algorithmic Complexity O(1) vs O(N), Relational Database Normalization, and Distributed Systems.
-- Combines rigorous computer science theory with 5+ years of practical full-stack software velocity.`,
+1. **Future Academic Vision**: Planned Master of Business Administration (MBA) in Technology Management & Strategic Business Leadership.
+2. **Master of Computer Applications (MCA) – Data Science**: KL University (2024–2026) — All examinations cleared & completed • Formal degree awaited.
+3. **Software Engineering Mentorship**: CodeYogi (Dec 2021–June 2022) — Intensive full-stack engineering under direct mentorship of IIT Delhi alumni.
+4. **ITI – Welder Trade**: Government ITI — 1-year technical vocational trade course completed after graduation (hands-on precision & industrial workshop discipline).
+5. **Bachelor's Degree (Graduation)**: Kumaun University, Nainital (2017–2020).
+6. **Schooling (10th & 12th Intermediate)**: GIC Jhankat, Khatima under Uttarakhand Board of School Education (UBSE, Ramnagar).`,
     actions: [
       { label: "Read MCA Journey Blueprint", path: "/about/mca-journey" },
       { label: "View Hire Briefing", path: "/services/hire-fullstack-developer" },
+      { label: "Download Resume (.docx)", href: "/Vishal_fullstack_5yr.docx" },
     ]
   },
   {
@@ -138,6 +142,12 @@ export default function AIAssistantModal() {
       scrollToBottom();
     }
   }, [messages, isOpen]);
+
+  useEffect(() => {
+    const handleOpen = () => setIsOpen(true);
+    window.addEventListener("open-ai-modal", handleOpen);
+    return () => window.removeEventListener("open-ai-modal", handleOpen);
+  }, []);
 
   const handleSend = (queryText) => {
     const q = (queryText || input).trim();
@@ -202,7 +212,7 @@ Would you like to explore his technical blueprints, founder case studies, or boo
       {/* Floating Action Trigger Button */}
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2.5 px-4 py-3 rounded-full bg-gradient-to-r from-purple-600 via-indigo-600 to-cyan-500 text-white font-bold text-xs shadow-2xl shadow-purple-600/50 hover:shadow-purple-500/70 hover:scale-105 active:scale-95 transition-all duration-300 border border-white/20 group"
+        className="fixed bottom-24 right-6 sm:bottom-6 sm:right-[88px] z-40 inline-flex items-center gap-2.5 px-4 py-3 rounded-full bg-gradient-to-r from-purple-600 via-indigo-600 to-cyan-500 text-white font-bold text-xs shadow-2xl shadow-purple-600/40 hover:shadow-purple-500/60 hover:scale-105 active:scale-95 transition-all duration-300 border border-white/20 group backdrop-blur-md whitespace-nowrap"
         aria-label="Open AI Assistant"
       >
         <div className="relative">
@@ -210,7 +220,7 @@ Would you like to explore his technical blueprints, founder case studies, or boo
           <span className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
         </div>
         <span className="tracking-wide">Ask AI About Vishal</span>
-        <span className="hidden sm:inline-block px-1.5 py-0.5 rounded bg-white/20 text-[10px] font-mono">
+        <span className="hidden md:inline-block px-1.5 py-0.5 rounded bg-white/20 text-[10px] font-mono">
           GEO
         </span>
       </button>

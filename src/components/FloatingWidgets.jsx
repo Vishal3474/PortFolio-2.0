@@ -14,6 +14,7 @@ import {
   FiActivity,
   FiCheckCircle,
 } from "react-icons/fi";
+import { HiSparkles } from "react-icons/hi";
 
 const bookingUrl = "https://app.1hourdeveloper.com/browseDeveloper/bookDeveloper?d=Vishal+V-3";
 
@@ -206,6 +207,20 @@ const FloatingWidgets = () => {
         {speedDialOpen && (
           <div className="flex flex-col items-end gap-2.5 animate-in fade-in slide-in-from-bottom-5 duration-200">
             
+            {/* 0. Ask AI Copilot */}
+            <button
+              onClick={() => {
+                setSpeedDialOpen(false);
+                window.dispatchEvent(new CustomEvent("open-ai-modal"));
+              }}
+              className="flex items-center gap-3 px-4 py-2.5 rounded-full bg-gradient-to-r from-purple-600 via-indigo-600 to-cyan-500 text-white font-bold text-xs shadow-xl shadow-purple-600/40 hover:scale-105 active:scale-95 transition-all group border border-white/20"
+            >
+              <span>Ask AI Copilot</span>
+              <div className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center text-sm text-amber-300">
+                <HiSparkles />
+              </div>
+            </button>
+
             {/* 1. Book Developer Button */}
             <a
               href={bookingUrl}

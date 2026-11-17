@@ -71,22 +71,22 @@ const Navbar = () => {
               offset={link.offset}
               spy={true}
               activeClass="text-purple-400 bg-purple-500/10 font-semibold"
-              className="text-xs font-medium text-slate-300 hover:text-white px-3 py-1.5 rounded-full transition-all duration-200 cursor-pointer"
+              className="text-xs font-medium text-slate-300 hover:text-white px-3 py-1.5 rounded-full transition-all duration-200 cursor-pointer whitespace-nowrap"
             >
               {link.name}
             </Link>
           ))}
-        </nav>
 
-        {/* Explore Hub Pill for Desktop */}
-        <RouterLink
-          to="/explore"
-          className="hidden xl:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-purple-500/15 hover:bg-purple-500/25 text-purple-300 hover:text-white border border-purple-500/30 text-xs font-semibold transition-all hover:scale-105"
-        >
-          <FiCompass className="text-xs" />
-          <span>Explore 18+ Pages</span>
-          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-        </RouterLink>
+          {/* Integrated Explore 28 Pages Directory inside Nav */}
+          <RouterLink
+            to="/explore"
+            className="text-xs font-semibold text-purple-300 hover:text-white px-3 py-1.5 rounded-full bg-purple-500/20 hover:bg-purple-500/30 border border-purple-500/30 transition-all flex items-center gap-1.5 shrink-0 whitespace-nowrap ml-1 group"
+          >
+            <FiCompass className="text-xs group-hover:rotate-45 transition-transform" />
+            <span>Explore (28)</span>
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+          </RouterLink>
+        </nav>
 
         {/* Action Button */}
         <div className="hidden sm:flex items-center gap-2.5">
