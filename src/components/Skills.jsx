@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   SiReact,
   SiNextdotjs,
@@ -26,7 +27,7 @@ import {
   SiPython,
   SiCplusplus,
 } from "react-icons/si";
-import { FiShield, FiCpu, FiServer, FiLayers, FiDatabase, FiCloud } from "react-icons/fi";
+import { FiShield, FiCpu, FiServer, FiLayers, FiDatabase, FiCloud, FiArrowUpRight, FiCompass } from "react-icons/fi";
 
 const skillCategories = [
   {
@@ -163,6 +164,59 @@ const Skills = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Skill Deep Dives Direct Showcase Strip */}
+        <div className="mt-12 glass-card rounded-3xl p-6 sm:p-8 border border-white/10 flex flex-col md:flex-row items-center justify-between gap-6 bg-gradient-to-r from-purple-950/20 via-indigo-950/20 to-slate-900/40">
+          <div>
+            <div className="flex items-center gap-2 text-xs font-mono font-bold text-purple-400 uppercase tracking-wider mb-1.5">
+              <FiCompass className="text-sm" />
+              <span>Architectural Blueprints & In-Depth Guides</span>
+            </div>
+            <h3 className="font-heading text-lg sm:text-xl font-bold text-white mb-2">
+              Looking for code snippets, database schemas & system diagrams?
+            </h3>
+            <div className="flex flex-wrap gap-2 text-xs">
+              <Link
+                to="/skills/react-nextjs"
+                className="px-3 py-1 rounded-lg bg-white/5 hover:bg-purple-500/20 border border-white/10 hover:border-purple-500/30 text-slate-300 hover:text-white transition-all"
+              >
+                React & Next.js SSR →
+              </Link>
+              <Link
+                to="/skills/nodejs-backend"
+                className="px-3 py-1 rounded-lg bg-white/5 hover:bg-purple-500/20 border border-white/10 hover:border-purple-500/30 text-slate-300 hover:text-white transition-all"
+              >
+                Node.js Microservices →
+              </Link>
+              <Link
+                to="/skills/database-engineering"
+                className="px-3 py-1 rounded-lg bg-white/5 hover:bg-purple-500/20 border border-white/10 hover:border-purple-500/30 text-slate-300 hover:text-white transition-all"
+              >
+                Database & Redis →
+              </Link>
+              <Link
+                to="/skills/cloud-devops"
+                className="px-3 py-1 rounded-lg bg-white/5 hover:bg-purple-500/20 border border-white/10 hover:border-purple-500/30 text-slate-300 hover:text-white transition-all"
+              >
+                Cloud Infrastructure & Docker →
+              </Link>
+              <Link
+                to="/skills/typescript-system-design"
+                className="px-3 py-1 rounded-lg bg-white/5 hover:bg-purple-500/20 border border-white/10 hover:border-purple-500/30 text-slate-300 hover:text-white transition-all"
+              >
+                TypeScript & Clean Code →
+              </Link>
+            </div>
+          </div>
+
+          <Link
+            to="/explore"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs shadow-lg shadow-purple-600/30 transition-all shrink-0 hover:scale-105"
+          >
+            <span>Explore All 18+ Pages</span>
+            <FiArrowUpRight className="text-sm" />
+          </Link>
         </div>
 
       </div>

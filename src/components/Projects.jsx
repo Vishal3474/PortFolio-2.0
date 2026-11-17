@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   FiExternalLink,
   FiCheckCircle,
@@ -9,6 +10,7 @@ import {
   FiCode,
   FiDatabase,
   FiGlobe,
+  FiCompass,
 } from "react-icons/fi";
 import { FaRocket } from "react-icons/fa";
 
@@ -25,6 +27,7 @@ const showcaseCards = [
     client: "Founded Startup",
     badge: "Founder & Lead Architect",
     link: "https://uniportal.in",
+    deepDive: "/startups/uniportal",
   },
   {
     id: "kumaun-software",
@@ -39,6 +42,7 @@ const showcaseCards = [
     client: "Founded Agency",
     badge: "Founder & Technical Lead",
     link: "https://kumaunsoftwaresolutions.web.app/",
+    deepDive: "/startups/kumaun-software",
   },
   {
     id: "eureka-pricing",
@@ -52,6 +56,7 @@ const showcaseCards = [
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
     client: "Eureka Forbes",
     badge: "Enterprise Production",
+    deepDive: "/experience/eureka-forbes",
   },
   {
     id: "eureka-qms",
@@ -65,6 +70,7 @@ const showcaseCards = [
       "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80",
     client: "Eureka Forbes",
     badge: "Plant Operations",
+    deepDive: "/experience/eureka-forbes",
   },
   {
     id: "unigoal",
@@ -78,6 +84,7 @@ const showcaseCards = [
       "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
     client: "Unigoal",
     badge: "React + Vite + MySQL",
+    deepDive: "/experience/unigoal",
   },
   {
     id: "lygato",
@@ -91,6 +98,7 @@ const showcaseCards = [
       "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
     client: "Lygato",
     badge: "Marketplace SaaS",
+    deepDive: "/experience/lygato",
   },
 ];
 
@@ -299,9 +307,19 @@ const Projects = () => {
           {/* Header Row with Title and Directional Navigation Buttons */}
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-6">
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-xs font-semibold uppercase tracking-wider mb-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-purple-400 animate-ping" />
-                <span>Shopmobi 3D Interactive Perspective</span>
+              <div className="flex flex-wrap items-center gap-2 mb-3">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-xs font-semibold uppercase tracking-wider">
+                  <span className="w-1.5 h-1.5 rounded-full bg-purple-400 animate-ping" />
+                  <span>Shopmobi 3D Interactive Perspective</span>
+                </div>
+                <Link
+                  to="/explore"
+                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-slate-300 hover:text-white text-xs font-semibold transition-all hover:scale-105"
+                >
+                  <FiCompass className="text-xs text-purple-400" />
+                  <span>Explore All 18+ Pages Hub</span>
+                  <span className="text-[10px] text-purple-400">→</span>
+                </Link>
               </div>
               <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-[1.15]">
                 Startups & Flagship Workflows. <br />
@@ -451,6 +469,16 @@ const Projects = () => {
                               <span>Visit Live Platform</span>
                               <FiExternalLink className="text-xs" />
                             </a>
+                          )}
+
+                          {card.deepDive && (
+                            <Link
+                              to={card.deepDive}
+                              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-white font-semibold text-xs transition-all pointer-events-auto border border-white/15 hover:scale-105 active:scale-95"
+                            >
+                              <span>Read Case Study</span>
+                              <FiArrowUpRight className="text-xs" />
+                            </Link>
                           )}
                         </div>
                       </div>

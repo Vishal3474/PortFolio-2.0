@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
-import { FiArrowUpRight, FiPhoneCall, FiLinkedin, FiGithub, FiCalendar } from "react-icons/fi";
+import { FiArrowUpRight, FiPhoneCall, FiLinkedin, FiGithub, FiCalendar, FiCompass } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 
 const Navbar = () => {
@@ -77,6 +78,16 @@ const Navbar = () => {
           ))}
         </nav>
 
+        {/* Explore Hub Pill for Desktop */}
+        <RouterLink
+          to="/explore"
+          className="hidden xl:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-purple-500/15 hover:bg-purple-500/25 text-purple-300 hover:text-white border border-purple-500/30 text-xs font-semibold transition-all hover:scale-105"
+        >
+          <FiCompass className="text-xs" />
+          <span>Explore 18+ Pages</span>
+          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+        </RouterLink>
+
         {/* Action Button */}
         <div className="hidden sm:flex items-center gap-2.5">
           <a
@@ -149,6 +160,15 @@ const Navbar = () => {
           </nav>
 
           <div className="mt-4 pt-4 border-t border-white/10 flex flex-col gap-2.5">
+            <RouterLink
+              to="/explore"
+              onClick={() => setNav(false)}
+              className="flex items-center justify-center gap-2 text-sm font-semibold py-2.5 rounded-xl bg-purple-500/20 text-purple-200 border border-purple-500/30 hover:bg-purple-500/30 transition-all"
+            >
+              <FiCompass className="text-base" />
+              <span>Explore All 18+ Pages & Blueprints</span>
+            </RouterLink>
+
             <a
               href="https://app.1hourdeveloper.com/browseDeveloper/bookDeveloper?d=Vishal+V-3"
               target="_blank"
