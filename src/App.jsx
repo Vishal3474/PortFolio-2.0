@@ -1,35 +1,25 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Front from "./components/Front";
-import TechMarquee from "./components/TechMarquee";
-import About from "./components/About";
-import Experience from "./components/Experience";
-import Skills from "./components/Skills";
-import ServicesFlowingSection from "./components/ServicesFlowingSection";
-import Projects from "./components/Projects";
-import Education from "./components/Education";
-import Resume from "./components/Resume";
-import Footer from "./components/Footer";
-import FloatingWidgets from "./components/FloatingWidgets";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsConditions from "./pages/TermsConditions";
+import CookiePolicy from "./pages/CookiePolicy";
+import Disclaimer from "./pages/Disclaimer";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#080c14] text-slate-100 flex flex-col selection:bg-purple-600 selection:text-white">
-      <Navbar />
-      <main className="flex-grow">
-        <Front />
-        <TechMarquee />
-        <About />
-        <Experience />
-        <Skills />
-        <ServicesFlowingSection />
-        <Projects />
-        <Education />
-        <Resume />
-      </main>
-      <Footer />
-      <FloatingWidgets />
-    </div>
+    <BrowserRouter>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-and-conditions" element={<TermsConditions />} />
+        <Route path="/cookie-policy" element={<CookiePolicy />} />
+        <Route path="/disclaimer" element={<Disclaimer />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

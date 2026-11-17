@@ -1,0 +1,36 @@
+import React from "react";
+import Navbar from "../components/Navbar";
+import Front from "../components/Front";
+import TechMarquee from "../components/TechMarquee";
+import About from "../components/About";
+import Experience from "../components/Experience";
+import Skills from "../components/Skills";
+import ServicesFlowingSection from "../components/ServicesFlowingSection";
+import Projects from "../components/Projects";
+import Education from "../components/Education";
+import Resume from "../components/Resume";
+import Footer from "../components/Footer";
+import FloatingWidgets from "../components/FloatingWidgets";
+import ConsentBanner from "../components/ConsentBanner";
+
+export default function HomePage() {
+  return (
+    <div className="min-h-screen bg-[#080c14] text-slate-100 flex flex-col selection:bg-purple-600 selection:text-white">
+      <Navbar />
+      <main className="flex-grow">
+        <Front />
+        <TechMarquee />
+        <About />
+        <Experience />
+        <Skills />
+        <ServicesFlowingSection />
+        <Projects />
+        <Education />
+        <Resume />
+      </main>
+      <Footer />
+      <FloatingWidgets />
+      <ConsentBanner />
+    </div>
+  );
+}

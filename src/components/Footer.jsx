@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
 import {
   FaGithub,
@@ -7,7 +8,7 @@ import {
 } from "react-icons/fa";
 import { FiMail, FiPhone, FiSend, FiArrowUp, FiCheckCircle, FiGlobe, FiMapPin, FiCalendar } from "react-icons/fi";
 
-function Footer() {
+function Footer({ onOpenLegal }) {
   const [formState, setFormState] = useState({
     name: "",
     email: "",
@@ -176,13 +177,56 @@ function Footer() {
           </div>
         </div>
 
+        {/* Legal & Policy Navigation Strip */}
+        <div className="flex flex-wrap items-center justify-between gap-4 py-6 border-t border-white/[0.08] text-xs">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-slate-400">
+            <Link
+              to="/privacy-policy"
+              className="hover:text-purple-300 transition-colors"
+            >
+              Privacy Policy
+            </Link>
+            <span className="text-slate-600 hidden sm:inline">•</span>
+            <Link
+              to="/terms-and-conditions"
+              className="hover:text-purple-300 transition-colors"
+            >
+              Terms & Conditions
+            </Link>
+            <span className="text-slate-600 hidden sm:inline">•</span>
+            <Link
+              to="/cookie-policy"
+              className="hover:text-purple-300 transition-colors"
+            >
+              Cookie & Consent Policy
+            </Link>
+            <span className="text-slate-600 hidden sm:inline">•</span>
+            <Link
+              to="/disclaimer"
+              className="hover:text-purple-300 transition-colors"
+            >
+              Fair Use & Disclaimers
+            </Link>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+            <Link
+              to="/cookie-policy"
+              className="text-[11px] font-mono text-purple-400 hover:text-purple-300 border border-purple-500/30 px-2.5 py-1 rounded-lg bg-purple-500/10 hover:bg-purple-500/20 transition-all cursor-pointer"
+            >
+              Consent Preferences
+            </Link>
+          </div>
+        </div>
+
         {/* Footer Bottom Bar */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 pt-8 border-t border-white/[0.08] text-xs text-slate-400">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 pt-6 border-t border-white/[0.06] text-xs text-slate-400">
           
           <div className="flex flex-wrap items-center gap-2">
             <span>© {new Date().getFullYear()} Vishal Singh. All rights reserved.</span>
             <span className="hidden sm:inline">•</span>
-            <span>Full Stack Developer (MERN • Next.js • TypeScript)</span>
+            <span>Full Stack Developer & Founder (MERN • Next.js • TypeScript)</span>
           </div>
 
           {/* Social Profiles */}
