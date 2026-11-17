@@ -95,22 +95,20 @@ const Resume = () => {
           <div className="flex items-center gap-2 bg-slate-900/80 p-1.5 rounded-xl border border-white/5">
             <button
               onClick={() => setActiveTab("structured")}
-              className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold transition-all ${
-                activeTab === "structured"
-                  ? "bg-purple-600 text-white shadow-md shadow-purple-600/30"
-                  : "text-slate-400 hover:text-white"
-              }`}
+              className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold transition-all ${activeTab === "structured"
+                ? "bg-purple-600 text-white shadow-md shadow-purple-600/30"
+                : "text-slate-400 hover:text-white"
+                }`}
             >
               <FiBriefcase />
               <span>Interactive Executive Sheet</span>
             </button>
             <button
               onClick={() => setActiveTab("preview")}
-              className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold transition-all ${
-                activeTab === "preview"
-                  ? "bg-purple-600 text-white shadow-md shadow-purple-600/30"
-                  : "text-slate-400 hover:text-white"
-              }`}
+              className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold transition-all ${activeTab === "preview"
+                ? "bg-purple-600 text-white shadow-md shadow-purple-600/30"
+                : "text-slate-400 hover:text-white"
+                }`}
             >
               <FiFileText />
               <span>DOCX Live Preview</span>
@@ -152,8 +150,8 @@ const Resume = () => {
         {/* Main Document Display Container */}
         <div
           className={`transition-all duration-300 ${isFullscreen
-              ? "fixed inset-0 z-50 bg-[#080c14]/95 backdrop-blur-2xl p-4 sm:p-8 flex flex-col items-center justify-center overflow-auto"
-              : "relative"
+            ? "fixed inset-0 z-50 bg-[#080c14]/95 backdrop-blur-2xl p-4 sm:p-8 flex flex-col items-center justify-center overflow-auto"
+            : "relative"
             }`}
         >
           {isFullscreen && (

@@ -1024,6 +1024,7 @@ This academic background provides Vishal with a solid command of Algorithms, Dat
       "Studied Relational Database Theory, Normalization (1NF through BCNF), and Distributed Query Optimization.",
       "Investigated network protocols (TCP/IP, HTTP/1.1, HTTP/2, WebSocket), concurrency models, and operating system scheduling.",
       "Bridged academic assignments with real-world startups—frequently implementing production systems for Uniportal and agency clients.",
+      "Technical Foundations: Completed post-graduation vocational training at ITI (Welder Trade), mastering precision engineering, industrial safety protocols, and hands-on discipline before diving into computer science.",
       "Schooling Foundations: Completed High School (10th) and Intermediate (12th) from GIC Jhankat under the Uttarakhand Board of School Education (UBSE), Ramnagar.",
       "Vocational Technical Foundations: Completed 1-year trade course at Government ITI (Welder Trade, pursued after graduation), mastering precision fabrication and industrial workshop discipline.",
       "Active MBA Roadmap: Planning to pursue an MBA in Technology & Business Strategy to complement 5+ years of software engineering and startup founder execution.",
