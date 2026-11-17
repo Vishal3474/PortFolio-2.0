@@ -6,11 +6,11 @@ const educationData = [
   {
     degree: "Master of Computer Applications – Data Science",
     institution: "KL University",
-    period: "Nov 2024 – Present",
-    status: "Currently Pursuing",
+    period: "2024 – 2026",
+    status: "Exams Completed • Degree Awaited",
     description:
-      "Advanced graduate study focusing on modern data science, statistical modeling, machine learning algorithms, database administration, and scalable computing.",
-    badge: "Master's Degree",
+      "Completed comprehensive graduate curriculum and all final examinations covering Data Science, Statistical Modeling, Machine Learning Algorithms, Database Systems, and Distributed Computing. Final degree conferral awaited.",
+    badge: "Master's Degree (Exams Done)",
   },
   {
     degree: "Certification – Frontend Development & React",

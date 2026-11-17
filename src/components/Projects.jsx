@@ -8,9 +8,39 @@ import {
   FiLayers,
   FiCode,
   FiDatabase,
+  FiGlobe,
 } from "react-icons/fi";
+import { FaRocket } from "react-icons/fa";
 
 const showcaseCards = [
+  {
+    id: "uniportal",
+    tag: "FOUNDER STARTUP • HIGHER EDTECH",
+    shortTitle: "Uniportal.in",
+    fullTitle: "Uniportal.in • University Admissions & Discovery Engine",
+    subtitle:
+      "Proprietary higher education ecosystem founded by Vishal Singh connecting universities with prospective students, automated CRM lead pipelines, course comparisons, and real-time admission tracking.",
+    stack: ["React.js", "Next.js", "Node.js", "Tailwind CSS", "REST APIs", "Cloud Infra"],
+    image:
+      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=80",
+    client: "Founded Startup",
+    badge: "Founder & Lead Architect",
+    link: "https://uniportal.in",
+  },
+  {
+    id: "kumaun-software",
+    tag: "FOUNDER STARTUP • TECH AGENCY",
+    shortTitle: "Kumaun Software",
+    fullTitle: "Kumaun Software Solutions • Digital Engineering Startup",
+    subtitle:
+      "Tech solutions startup founded by Vishal Singh delivering custom full-stack enterprise software, cloud architectures, modern web & mobile applications, and digital business systems.",
+    stack: ["React.js", "Firebase", "Node.js", "Tailwind CSS", "Cloud Solutions"],
+    image:
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+    client: "Founded Agency",
+    badge: "Founder & Technical Lead",
+    link: "https://kumaunsoftwaresolutions.web.app/",
+  },
   {
     id: "eureka-pricing",
     tag: "ENTERPRISE B2B",
@@ -63,24 +93,47 @@ const showcaseCards = [
     client: "Lygato",
     badge: "Marketplace SaaS",
   },
-  {
-    id: "eduminatti",
-    tag: "HIGH-TRAFFIC EDTECH",
-    shortTitle: "Eduminatti",
-    fullTitle: "Eduminatti • High-Traffic School Search & Lead CRM",
-    subtitle:
-      "High-performance SEO-friendly SSR page architecture, custom Lead Management CRM for admin workflows, and faceted search across thousands of schools.",
-    stack: ["Next.js", "React.js", "REST APIs", "SEO Architecture", "Tailwind CSS"],
-    image:
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80",
-    client: "Eduminatti",
-    badge: "EdTech Platform",
-  },
 ];
 
 const projectsData = [
   {
     id: 1,
+    title: "Uniportal.in – University Admissions & Lead Engine",
+    category: "Startups & Ventures",
+    client: "Founded Startup (Vishal Singh)",
+    description:
+      "Comprehensive higher education ecosystem and university admissions portal founded and architected by Vishal Singh. Connects higher-education aspirants with top universities, dynamic fee calculators, admission requirements, and automated lead CRM funnels.",
+    features: [
+      "Faceted university discovery engine with dynamic course & fee filters",
+      "Automated lead management CRM workflows for university partner desks",
+      "Interactive multi-stage student admission applications and verification pipelines",
+      "Sub-second page loading architecture with optimized SEO metadata",
+    ],
+    tags: ["React.js", "Next.js", "Node.js", "Express.js", "Tailwind CSS", "REST APIs", "Cloud Hosting"],
+    link: "https://uniportal.in",
+    badge: "Founder & Lead Architect",
+    featured: true,
+  },
+  {
+    id: 2,
+    title: "Kumaun Software Solutions – Digital Engineering Startup",
+    category: "Startups & Ventures",
+    client: "Founded Agency (Vishal Singh)",
+    description:
+      "Software engineering and digital solutions agency founded by Vishal Singh in Kumaun, Uttarakhand. Provides custom SaaS platform development, enterprise web and mobile applications, cloud infrastructure setups, and digital automation systems for regional and international clients.",
+    features: [
+      "Full-cycle custom web and mobile software development services",
+      "Cloud architecture and deployment pipelines on Firebase and AWS",
+      "High-converting modern UI/UX design systems built with React and Tailwind CSS",
+      "Client management, technical consulting, and digital transformation roadmaps",
+    ],
+    tags: ["React.js", "Firebase", "Node.js", "Tailwind CSS", "Cloud Solutions", "Web Architecture"],
+    link: "https://kumaunsoftwaresolutions.web.app/",
+    badge: "Founder & Technical Lead",
+    featured: true,
+  },
+  {
+    id: 3,
     title: "Bulk Pricing Workflow – Eureka Forbes",
     category: "Enterprise & B2B",
     client: "Eureka Forbes",
@@ -97,7 +150,7 @@ const projectsData = [
     featured: true,
   },
   {
-    id: 2,
+    id: 4,
     title: "Quality Management System (QMS) – Eureka Forbes",
     category: "Enterprise & B2B",
     client: "Eureka Forbes",
@@ -114,7 +167,7 @@ const projectsData = [
     featured: true,
   },
   {
-    id: 3,
+    id: 5,
     title: "Lygato – Entertainment Professional Platform",
     category: "SaaS & Marketplace",
     client: "Lygato",
@@ -131,7 +184,24 @@ const projectsData = [
     featured: true,
   },
   {
-    id: 4,
+    id: 6,
+    title: "Unigoal.com – Global Education Discovery",
+    category: "Startups & Ventures",
+    client: "Unigoal",
+    description:
+      "Full-stack higher-education platform built with React, Vite, and MySQL, enabling seamless global university discovery, course comparisons, eligibility criteria checks, and student application pipelines.",
+    features: [
+      "Built with high-performance React.js & Vite for sub-second page loads",
+      "Relational database architecture powered by MySQL with optimized indexing",
+      "Faceted university & course search with multi-parameter filter queries",
+      "Interactive multi-step application tracking and student lead workflows",
+    ],
+    tags: ["React.js", "Vite", "MySQL", "Tailwind CSS", "REST APIs"],
+    badge: "React • Vite • MySQL",
+    featured: true,
+  },
+  {
+    id: 7,
     title: "Eduminatti – School Portal & Lead Management",
     category: "SaaS & Marketplace",
     client: "Eduminatti",
@@ -145,27 +215,10 @@ const projectsData = [
     ],
     tags: ["Next.js", "React.js", "REST APIs", "SEO Architecture", "Tailwind CSS", "CRM"],
     badge: "EdTech Platform",
-    featured: true,
-  },
-  {
-    id: 5,
-    title: "Unigoal.com – Global Education Discovery",
-    category: "SaaS & Marketplace",
-    client: "Unigoal",
-    description:
-      "Full-stack higher-education platform built with React, Vite, and MySQL, enabling seamless global university discovery, course comparisons, eligibility criteria checks, and student application pipelines.",
-    features: [
-      "Built with high-performance React.js & Vite for sub-second page loads",
-      "Relational database architecture powered by MySQL with optimized indexing",
-      "Faceted university & course search with multi-parameter filter queries",
-      "Interactive multi-step application tracking and student lead workflows",
-    ],
-    tags: ["React.js", "Vite", "MySQL", "Tailwind CSS", "REST APIs"],
-    badge: "React • Vite • MySQL",
     featured: false,
   },
   {
-    id: 6,
+    id: 8,
     title: "YOLOv11 Box Counting POC",
     category: "AI & Vision",
     client: "R&D Proof of Concept",
@@ -182,7 +235,7 @@ const projectsData = [
     featured: false,
   },
   {
-    id: 7,
+    id: 9,
     title: "JobRaahi – Hyperlocal Job Search Engine",
     category: "SaaS & Marketplace",
     client: "JobRaahi",
@@ -199,7 +252,7 @@ const projectsData = [
     featured: false,
   },
   {
-    id: 8,
+    id: 10,
     title: "Interactive Task & Productivity Suite",
     category: "Tools & Utilities",
     client: "Personal Production",
@@ -217,7 +270,7 @@ const projectsData = [
   },
 ];
 
-const categories = ["All", "Enterprise & B2B", "SaaS & Marketplace", "AI & Vision", "Tools & Utilities"];
+const categories = ["All", "Startups & Ventures", "Enterprise & B2B", "SaaS & Marketplace", "AI & Vision", "Tools & Utilities"];
 
 const Projects = () => {
   const [activeShowcase, setActiveShowcase] = useState(0);
@@ -252,7 +305,7 @@ const Projects = () => {
                 <span>Shopmobi 3D Interactive Perspective</span>
               </div>
               <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-[1.15]">
-                Flagship Workflows. <br />
+                Startups & Flagship Workflows. <br />
                 <span className="bg-gradient-to-r from-purple-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent">
                   Engineered for Production Scale.
                 </span>
@@ -376,9 +429,9 @@ const Projects = () => {
                           {card.subtitle}
                         </p>
 
-                        {/* Tech Stack Pills in Active Card */}
+                        {/* Tech Stack Pills & Link in Active Card */}
                         <div
-                          className={`mt-4 pl-4 flex flex-wrap gap-1.5 items-center transition-all duration-500 ${
+                          className={`mt-4 pl-4 flex flex-wrap gap-2 items-center transition-all duration-500 ${
                             isActive ? "translate-y-0 opacity-100 delay-200" : "translate-y-2 opacity-0"
                           }`}
                         >
@@ -390,9 +443,21 @@ const Projects = () => {
                               {item}
                             </span>
                           ))}
-                          <span className="text-[10px] font-semibold text-emerald-400 ml-2">
-                            • {card.client}
+                          <span className="text-[10px] font-semibold text-emerald-400 mr-2">
+                            • {card.badge}
                           </span>
+
+                          {card.link && (
+                            <a
+                              href={card.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-semibold text-xs transition-all pointer-events-auto shadow-md hover:scale-105 active:scale-95"
+                            >
+                              <span>Visit Live Platform</span>
+                              <FiExternalLink className="text-xs" />
+                            </a>
+                          )}
                         </div>
                       </div>
                     </div>
@@ -414,7 +479,7 @@ const Projects = () => {
             Explore All Projects & Architecture
           </h2>
           <p className="mt-3 text-slate-400 text-sm sm:text-base">
-            Detailed breakdown of production features, architectural decisions, and technology implementations.
+            Detailed breakdown of founder startups, enterprise workflows, and scalable web platforms.
           </p>
         </div>
 
@@ -448,8 +513,9 @@ const Projects = () => {
               <div>
                 {/* Header Meta */}
                 <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
-                  <span className="text-xs font-bold px-3 py-1 rounded-full bg-purple-500/15 text-purple-300 border border-purple-500/25">
-                    {project.badge}
+                  <span className="text-xs font-bold px-3 py-1 rounded-full bg-purple-500/15 text-purple-300 border border-purple-500/25 flex items-center gap-1.5">
+                    {project.category === "Startups & Ventures" && <FaRocket className="text-purple-400" />}
+                    <span>{project.badge}</span>
                   </span>
                   <span className="text-xs font-mono text-slate-400">
                     {project.client}
@@ -496,9 +562,10 @@ const Projects = () => {
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-purple-400 hover:text-purple-300 transition-colors"
+                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-purple-400 hover:text-purple-300 transition-colors group/link"
                     >
-                      <span>Explore Live Project</span>
+                      <FiGlobe className="text-sm group-hover/link:rotate-45 transition-transform" />
+                      <span>Explore Live Platform ({project.link.replace("https://", "")})</span>
                       <FiExternalLink className="text-sm" />
                     </a>
                   </div>

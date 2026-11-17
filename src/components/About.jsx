@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { FiMail, FiPhone, FiMapPin, FiCheck, FiCopy, FiArrowUpRight, FiLayers, FiCode, FiLinkedin, FiCalendar } from "react-icons/fi";
-import { FaWhatsapp } from "react-icons/fa";
+import { FiMail, FiPhone, FiMapPin, FiCheck, FiCopy, FiArrowUpRight, FiLayers, FiCode, FiLinkedin, FiCalendar, FiGlobe, FiZap } from "react-icons/fi";
+import { FaWhatsapp, FaRocket } from "react-icons/fa";
 import MagicBentoCard from "./MagicBentoCard";
 
 const About = () => {
@@ -19,13 +19,13 @@ const About = () => {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-xs font-semibold uppercase tracking-wider mb-4">
-            Professional Profile
+            Professional Profile & Ventures
           </div>
           <h2 className="font-heading text-3xl sm:text-5xl font-bold text-white tracking-tight">
             About Vishal Singh
           </h2>
           <p className="mt-4 text-slate-400 text-base sm:text-lg">
-            Full Stack Developer specializing in the MERN stack, Next.js, TypeScript, and modern cloud architectures.
+            Senior Full Stack Developer & Founder specializing in the MERN stack, Next.js, TypeScript, cloud architectures, and scalable digital ventures.
           </p>
         </div>
 
@@ -39,16 +39,16 @@ const About = () => {
             <div>
               <div className="flex items-center gap-2 text-purple-400 font-semibold text-xs tracking-wider uppercase mb-3">
                 <FiCode className="text-base" />
-                <span>Executive Summary</span>
+                <span>Executive Summary & Founder Profile</span>
               </div>
               <h3 className="font-heading text-2xl sm:text-3xl font-bold text-white mb-4">
-                5+ years engineering scalable web applications and enterprise workflows.
+                5+ years engineering scalable web applications, enterprise workflows, and founder startups.
               </h3>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
-                Hi, I'm <strong className="text-white">Vishal Singh</strong> from <strong className="text-purple-300">Khatima, Uttarakhand, India</strong> with extensive hands-on expertise across <strong className="text-purple-300">React.js, Next.js, Node.js, Express.js, TypeScript, and MongoDB/PostgreSQL</strong>.
+                Hi, I'm <strong className="text-white">Vishal Singh</strong> from <strong className="text-purple-300">Khatima, Uttarakhand, India</strong> with extensive hands-on expertise across <strong className="text-purple-300">React.js, Next.js, Node.js, Express.js, TypeScript, and MongoDB/PostgreSQL/MySQL</strong>.
               </p>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
-                Over the course of my career—including roles at <strong>Space To Tech (Techugo Client)</strong> and <strong>Digital 360 India</strong>—I have contributed to mission-critical systems for companies like <em>Eureka Forbes</em>, entertainment platforms like <em>Lygato</em>, and high-traffic portals like <em>Eduminatti</em>.
+                Over the course of my career—including roles at <strong>Space To Tech (Techugo Client)</strong>, <strong>Digital 360 India</strong>, and founding my own startups <strong>Kumaun Software Solutions</strong> and <strong>Uniportal.in</strong>—I have architected mission-critical systems for companies like <em>Eureka Forbes</em> (Bulk Pricing & QMS), entertainment platforms like <em>Lygato</em>, and high-traffic portals like <em>Eduminatti</em>.
               </p>
 
               <div className="p-4 rounded-2xl bg-white/[0.03] border border-white/[0.08] mb-6">
@@ -76,8 +76,8 @@ const About = () => {
                 <span className="text-white font-semibold text-sm">MERN & Next.js</span>
               </div>
               <div>
-                <span className="text-slate-500 block">Education</span>
-                <span className="text-white font-semibold text-sm">MCA Data Science</span>
+                <span className="text-slate-500 block">Ventures</span>
+                <span className="text-purple-300 font-semibold text-sm">2 Startups Built</span>
               </div>
               <div>
                 <span className="text-slate-500 block">Status</span>
@@ -103,7 +103,7 @@ const About = () => {
               {/* Pin Box */}
               <div className="p-5 rounded-2xl bg-gradient-to-br from-indigo-950/60 to-purple-950/60 border border-white/10 text-center">
                 <span className="text-3xl block mb-2">🏔️ 🇮🇳</span>
-                <div className="text-sm font-bold text-white">Northern India Hub</div>
+                <div className="text-sm font-bold text-white">Northern India Tech Hub</div>
                 <div className="text-xs text-slate-400 mt-1">High-bandwidth dedicated dual-line setup</div>
               </div>
             </div>
@@ -111,6 +111,90 @@ const About = () => {
             <div className="pt-6 mt-6 border-t border-white/10 flex items-center justify-between text-xs text-slate-400">
               <span>Timezone</span>
               <span className="text-white font-mono font-semibold">IST (UTC+5:30)</span>
+            </div>
+          </MagicBentoCard>
+
+          {/* Startups & Ventures Founded (12 Cols) */}
+          <MagicBentoCard className="md:col-span-12 glass-card p-6 sm:p-7 border border-purple-500/25 bg-gradient-to-r from-[#0d1020] via-[#130f28] to-[#0d1020] relative overflow-hidden">
+            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-5">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-purple-500/20 text-purple-300 flex items-center justify-center text-xl">
+                  <FaRocket />
+                </div>
+                <div>
+                  <h4 className="font-heading font-bold text-white text-base sm:text-lg">
+                    Startups Built & Founded by Vishal Singh
+                  </h4>
+                  <p className="text-xs text-slate-400">
+                    Proprietary ventures and software platforms engineered from ground up
+                  </p>
+                </div>
+              </div>
+              <span className="text-xs font-mono font-semibold px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/25 text-emerald-400">
+                ● Live Production Ventures
+              </span>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* Startup 1: Uniportal.in */}
+              <div className="p-5 rounded-2xl bg-white/[0.03] border border-white/[0.08] hover:border-purple-500/50 hover:bg-white/[0.06] transition-all flex flex-col justify-between group">
+                <div>
+                  <div className="flex items-center justify-between gap-2 mb-2.5">
+                    <span className="text-xs font-bold font-mono px-2.5 py-0.5 rounded-full bg-indigo-500/20 border border-indigo-500/30 text-indigo-300">
+                      Higher EdTech Admission Portal
+                    </span>
+                    <span className="text-[11px] font-semibold text-emerald-400">Live Platform</span>
+                  </div>
+                  <h5 className="font-heading font-bold text-white text-lg group-hover:text-purple-300 transition-colors">
+                    Uniportal.in
+                  </h5>
+                  <p className="text-xs text-slate-300 mt-1.5 leading-relaxed">
+                    End-to-end university discovery and admissions portal connecting students with higher-education courses, admission funnels, automated lead management CRM, and verification pipelines.
+                  </p>
+                </div>
+                <div className="mt-4 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+                  <span className="text-[10px] font-mono text-slate-400">React • Next.js • REST APIs</span>
+                  <a
+                    href="https://uniportal.in"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-purple-400 hover:text-purple-300 transition-colors"
+                  >
+                    <span>uniportal.in</span>
+                    <FiArrowUpRight />
+                  </a>
+                </div>
+              </div>
+
+              {/* Startup 2: Kumaun Software Solutions */}
+              <div className="p-5 rounded-2xl bg-white/[0.03] border border-white/[0.08] hover:border-cyan-500/50 hover:bg-white/[0.06] transition-all flex flex-col justify-between group">
+                <div>
+                  <div className="flex items-center justify-between gap-2 mb-2.5">
+                    <span className="text-xs font-bold font-mono px-2.5 py-0.5 rounded-full bg-cyan-500/20 border border-cyan-500/30 text-cyan-300">
+                      Digital Engineering Agency
+                    </span>
+                    <span className="text-[11px] font-semibold text-emerald-400">Live Agency</span>
+                  </div>
+                  <h5 className="font-heading font-bold text-white text-lg group-hover:text-cyan-300 transition-colors">
+                    Kumaun Software Solutions
+                  </h5>
+                  <p className="text-xs text-slate-300 mt-1.5 leading-relaxed">
+                    Digital engineering agency delivering bespoke full-stack enterprise web and mobile applications, cloud infrastructure, and technical consulting for regional and global businesses.
+                  </p>
+                </div>
+                <div className="mt-4 pt-3.5 border-t border-white/[0.06] flex items-center justify-between">
+                  <span className="text-[10px] font-mono text-slate-400">React • Firebase • Cloud Infra</span>
+                  <a
+                    href="https://kumaunsoftwaresolutions.web.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-cyan-400 hover:text-cyan-300 transition-colors"
+                  >
+                    <span>kumaunsoftwaresolutions.web.app</span>
+                    <FiArrowUpRight />
+                  </a>
+                </div>
+              </div>
             </div>
           </MagicBentoCard>
 

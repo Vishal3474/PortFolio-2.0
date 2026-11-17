@@ -300,14 +300,14 @@ const Resume = () => {
               {/* Professional Experience */}
               <div className="mb-8">
                 <h2 className="font-heading text-sm font-bold uppercase tracking-wider text-purple-400 mb-4 border-b border-purple-500/20 pb-1">
-                  Professional Experience
+                  Professional Experience & Founder Ventures
                 </h2>
 
-                {/* Job 1 */}
+                {/* Role 1 */}
                 <div className="mb-6">
                   <div className="flex flex-wrap items-baseline justify-between">
                     <h3 className="font-heading text-base font-bold text-white">
-                      Software Developer – Space To Tech
+                      Software Developer – Space To Tech (Techugo Client)
                     </h3>
                     <span className="text-xs font-mono text-purple-300">Aug 2023 – Present | Noida, India</span>
                   </div>
@@ -322,7 +322,25 @@ const Resume = () => {
                   </ul>
                 </div>
 
-                {/* Job 2 */}
+                {/* Role 2: Founder Ventures */}
+                <div className="mb-6">
+                  <div className="flex flex-wrap items-baseline justify-between">
+                    <h3 className="font-heading text-base font-bold text-white flex items-center gap-2">
+                      <span>Founder & Lead Technical Architect – Kumaun Software Solutions & Uniportal</span>
+                    </h3>
+                    <span className="text-xs font-mono text-purple-300">2023 – Present | Uttarakhand, India</span>
+                  </div>
+                  <div className="text-xs text-indigo-300 italic mb-2">
+                    Founded digital engineering startup Kumaun Software Solutions (kumaunsoftwaresolutions.web.app) and architected proprietary EdTech portal Uniportal.in (uniportal.in).
+                  </div>
+                  <ul className="list-disc list-inside space-y-1 text-xs text-slate-300">
+                    <li>Architected and launched <strong className="text-white">Uniportal.in</strong>, an end-to-end university admissions ecosystem with course comparisons, CRM lead pipelines, and student verification.</li>
+                    <li>Founded <strong className="text-white">Kumaun Software Solutions</strong>, delivering custom full-stack enterprise software, cloud infrastructure, and modern mobile/web platforms for regional and global businesses.</li>
+                    <li>Implemented cloud deployments on Firebase, Vercel, and AWS with automated CI/CD and sub-second load times.</li>
+                  </ul>
+                </div>
+
+                {/* Role 3 */}
                 <div>
                   <div className="flex flex-wrap items-baseline justify-between">
                     <h3 className="font-heading text-base font-bold text-white">
@@ -344,9 +362,15 @@ const Resume = () => {
               {/* Selected Projects */}
               <div className="mb-8">
                 <h2 className="font-heading text-sm font-bold uppercase tracking-wider text-purple-400 mb-3 border-b border-purple-500/20 pb-1">
-                  Selected Enterprise Projects
+                  Selected Founder & Enterprise Projects
                 </h2>
                 <div className="space-y-3 text-xs">
+                  <div>
+                    <strong className="text-white">Uniportal.in (Founder Startup):</strong> <span className="text-slate-300">Proprietary university discovery and admission portal (https://uniportal.in) with student lead CRM workflows, course exploration, and dynamic verification pipelines built with React, Next.js, and Node.js.</span>
+                  </div>
+                  <div>
+                    <strong className="text-white">Kumaun Software Solutions (Founder Agency):</strong> <span className="text-slate-300">Digital software agency platform (https://kumaunsoftwaresolutions.web.app/) delivering custom web applications, SaaS products, cloud infrastructure, and technical consulting.</span>
+                  </div>
                   <div>
                     <strong className="text-white">Lygato:</strong> <span className="text-slate-300">Entertainment-professional platform using React.js and PostgreSQL for event planning, secure bookings, marketplace connecting artists, venues, and promoters. Integrated Material UI, Stripe, SoundCloud, Auth0, and GetStream.</span>
                   </div>
@@ -375,7 +399,7 @@ const Resume = () => {
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                   <div>
-                    <strong className="text-white">MCA – Data Science:</strong> <span className="text-slate-300">KL University (Nov 2024 – Current, Pursuing)</span>
+                    <strong className="text-white">MCA – Data Science:</strong> <span className="text-slate-300">KL University (All Exams Completed • Degree Awaited)</span>
                   </div>
                   <div>
                     <strong className="text-white">Frontend Certification:</strong> <span className="text-slate-300">CodeYogi (Dec 2021 – June 2022, Mentored by IIT Delhi alumni)</span>

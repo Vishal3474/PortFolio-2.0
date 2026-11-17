@@ -45,7 +45,11 @@ export const engineer = {
   name: "Vishal Singh",
   experience: "5+ Years Professional",
   currentRole: "Software Developer @ Space To Tech (Techugo Client)",
-  education: "MCA in Data Science (KL University)",
+  education: "MCA in Data Science @ KL University (Exams Completed • Degree Awaited)",
+  startupsFounded: [
+    "Uniportal.in (Higher EdTech Admissions Portal)",
+    "Kumaun Software Solutions (Digital Engineering Agency)"
+  ],
   coreStack: {
     frontend: ["React.js", "Next.js", "TypeScript", "Tailwind CSS"],
     backend: ["Node.js", "Express.js", "NestJS", "REST & GraphQL"],
@@ -375,7 +379,7 @@ $ deploy --target production --now
                         <div>
                           <h3 className="font-heading font-bold text-lg text-white">Vishal Singh</h3>
                           <p className="text-xs text-purple-400 font-medium">Software Developer @ Space To Tech (Techugo)</p>
-                          <p className="text-[11px] text-slate-400">MCA Data Science @ KL University</p>
+                          <p className="text-[11px] text-slate-400">MCA Data Science @ KL University (Exams Done • Degree Awaited)</p>
                         </div>
                       </div>
 
@@ -483,8 +487,8 @@ $ deploy --target production --now
             {
               num: "MCA Degree",
               label: "Data Science Major",
-              desc: "KL University • Algorithms & ML",
-              tag: "Advanced Computing",
+              desc: "KL University • Exams Completed (Degree Awaited)",
+              tag: "Exams Done • Degree Awaited",
               color: "from-pink-400 to-purple-400",
             },
           ].map((metric, idx) => (
