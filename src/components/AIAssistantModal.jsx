@@ -212,7 +212,7 @@ Would you like to explore his technical blueprints, founder case studies, or boo
       {/* Floating Action Trigger Button */}
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-24 right-6 sm:bottom-6 sm:right-[88px] z-40 inline-flex items-center gap-2.5 px-4 py-3 rounded-full bg-gradient-to-r from-purple-600 via-indigo-600 to-cyan-500 text-white font-bold text-xs shadow-2xl shadow-purple-600/40 hover:shadow-purple-500/60 hover:scale-105 active:scale-95 transition-all duration-300 border border-white/20 group backdrop-blur-md whitespace-nowrap"
+        className="fixed bottom-24 right-6 sm:bottom-6 sm:right-24 z-40 inline-flex items-center gap-2.5 px-4 py-3 rounded-full bg-gradient-to-r from-purple-600 via-indigo-600 to-cyan-500 text-white font-bold text-xs shadow-2xl shadow-purple-600/40 hover:shadow-purple-500/60 hover:scale-105 active:scale-95 transition-all duration-300 border border-white/20 group backdrop-blur-md whitespace-nowrap"
         aria-label="Open AI Assistant"
       >
         <div className="relative">

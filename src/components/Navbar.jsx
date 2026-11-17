@@ -61,7 +61,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-1 bg-white/[0.03] border border-white/[0.06] rounded-full px-3 py-1">
+        <nav className="hidden lg:flex items-center gap-0.5 xl:gap-1 bg-white/[0.03] border border-white/[0.06] rounded-full px-2 xl:px-3 py-1 shrink-0">
           {navLinks.map((link) => (
             <Link
               key={link.to}
@@ -71,7 +71,7 @@ const Navbar = () => {
               offset={link.offset}
               spy={true}
               activeClass="text-purple-400 bg-purple-500/10 font-semibold"
-              className="text-xs font-medium text-slate-300 hover:text-white px-3 py-1.5 rounded-full transition-all duration-200 cursor-pointer whitespace-nowrap"
+              className="text-xs font-medium text-slate-300 hover:text-white px-2 xl:px-2.5 py-1.5 rounded-full transition-all duration-200 cursor-pointer whitespace-nowrap"
             >
               {link.name}
             </Link>
@@ -80,7 +80,7 @@ const Navbar = () => {
           {/* Integrated Explore 28 Pages Directory inside Nav */}
           <RouterLink
             to="/explore"
-            className="text-xs font-semibold text-purple-300 hover:text-white px-3 py-1.5 rounded-full bg-purple-500/20 hover:bg-purple-500/30 border border-purple-500/30 transition-all flex items-center gap-1.5 shrink-0 whitespace-nowrap ml-1 group"
+            className="text-xs font-semibold text-purple-300 hover:text-white px-2.5 xl:px-3 py-1.5 rounded-full bg-purple-500/20 hover:bg-purple-500/30 border border-purple-500/30 transition-all flex items-center gap-1.5 shrink-0 whitespace-nowrap ml-1 group"
           >
             <FiCompass className="text-xs group-hover:rotate-45 transition-transform" />
             <span>Explore (28)</span>
@@ -89,13 +89,13 @@ const Navbar = () => {
         </nav>
 
         {/* Action Button */}
-        <div className="hidden sm:flex items-center gap-2.5">
+        <div className="hidden sm:flex items-center gap-2 xl:gap-2.5 shrink-0">
           <a
             href="https://linkedin.com/in/meetwithvishal"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn Profile"
-            className="w-8 h-8 rounded-full glass-card flex items-center justify-center text-slate-300 hover:text-white hover:border-purple-500/40 transition-all"
+            className="w-8 h-8 rounded-full glass-card flex items-center justify-center text-slate-300 hover:text-white hover:border-purple-500/40 transition-all shrink-0"
           >
             <FiLinkedin className="text-sm" />
           </a>
@@ -104,7 +104,7 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub Profile"
-            className="w-8 h-8 rounded-full glass-card flex items-center justify-center text-slate-300 hover:text-white hover:border-purple-500/40 transition-all"
+            className="w-8 h-8 rounded-full glass-card flex items-center justify-center text-slate-300 hover:text-white hover:border-purple-500/40 transition-all shrink-0"
           >
             <FiGithub className="text-sm" />
           </a>
@@ -113,19 +113,20 @@ const Navbar = () => {
             href="https://wa.me/919520630066"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 hover:bg-emerald-500/20 transition-all duration-200"
+            aria-label="Chat on WhatsApp"
+            className="flex items-center gap-1.5 text-xs font-semibold px-2.5 xl:px-3 py-1.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 hover:bg-emerald-500/20 transition-all duration-200 shrink-0 whitespace-nowrap"
           >
-            <FaWhatsapp className="text-sm" />
-            <span>WhatsApp</span>
+            <FaWhatsapp className="text-sm shrink-0" />
+            <span className="hidden xl:inline">WhatsApp</span>
           </a>
 
           <a
             href="https://app.1hourdeveloper.com/browseDeveloper/bookDeveloper?d=Vishal+V-3"
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-full bg-gradient-to-r from-purple-600 via-indigo-600 to-indigo-700 text-white shadow-lg shadow-purple-600/25 hover:shadow-purple-600/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
+            className="group relative inline-flex items-center gap-1.5 text-xs font-semibold px-3.5 xl:px-4 py-2 rounded-full bg-gradient-to-r from-purple-600 via-indigo-600 to-indigo-700 text-white shadow-lg shadow-purple-600/25 hover:shadow-purple-600/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 shrink-0 whitespace-nowrap"
           >
-            <FiCalendar className="text-sm" />
+            <FiCalendar className="text-sm shrink-0" />
             <span>Book Developer</span>
           </a>
         </div>
