@@ -1,0 +1,50 @@
+# Vishal Singh - Complete Engineering & Architecture Dataset (LLM Full Dump)
+
+This document contains the uncompressed technical reference data of Vishal Singh's software engineering portfolio, founder ventures, code patterns, database architectures, and production case studies.
+
+## 1. Identity & Credentials
+- Name: Vishal Singh
+- Role: Senior Full Stack Developer & Founder
+- Experience: 5+ Years Verified
+- Education: Master of Computer Applications (MCA) at KL University (Exams Completed • Degree Awaited)
+- Base Location: Khatima, Udham Singh Nagar, Uttarakhand, India
+- Remote Availability: Worldwide (US, EU, APAC timezones)
+- Direct Consultation Link: https://app.1hourdeveloper.com/browseDeveloper/bookDeveloper?d=Vishal+V-3
+- Direct WhatsApp: https://wa.me/919520630066
+- Email: vishalkumar3474@gmail.com
+- Resume Download: https://portfoliobyvishal.netlify.app/Vishal_fullstack_5yr.docx
+
+## 2. Founder Startups
+### Uniportal.in (https://uniportal.in)
+- EdTech admissions engine bridging universities and prospective students.
+- Automated CRM pipelines with real-time lead attribution.
+- Stack: React.js, Next.js, Node.js, Express, MongoDB, Tailwind CSS.
+
+### Kumaun Software Solutions (https://kumaunsoftwaresolutions.web.app/)
+- Digital engineering studio founded in Uttarakhand.
+- Delivered over 15 client projects with 100% on-time delivery track record.
+
+## 3. Flagship Enterprise Work
+### Eureka Forbes - Bulk Pricing & Plant QMS
+- Engineered mathematical calculation engine for dynamic B2B volume pricing and margin thresholds.
+- Created digital Quoting Management System (QMS) reducing quotation turnaround from 4 days to 15 seconds.
+- Built plant Quality Management System with strict role-based access control (RBAC).
+
+### Space To Tech (Techugo Client)
+- Refactored monolithic frontend into modular lazy-loaded components.
+- Reduced bundle size by 48% and improved page speed by 3.2x.
+
+### Unigoal.com
+- Built with React, Vite, and MySQL. Multi-faceted course search with indexed relational queries.
+
+### Lygato
+- E-commerce & marketplace SaaS with Stripe payment escrows, Auth0, and real-time chat.
+
+### Eduminatti
+- Educational directory with programmatic SEO handling 500,000+ monthly visits.
+
+## 4. Key Engineering Blueprints
+- Frontend: Next.js 14 App Router, Streaming Server Components, React Suspense, Zustand, Tailwind CSS.
+- Backend: Layered Controller-Service-Repository pattern, Redis token-bucket rate limiters, BullMQ background jobs.
+- Databases: MongoDB aggregation pipelines, MySQL relational indexing, Redis cache-aside (94%+ hit ratio).
+- Cloud & DevOps: Multi-stage Docker Alpine images, AWS EC2/S3, GitHub Actions CI/CD pipelines, NGINX SSL.

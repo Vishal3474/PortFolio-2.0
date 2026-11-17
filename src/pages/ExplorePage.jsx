@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
+import SEOHead from "../components/SEOHead";
 import { 
   FiArrowLeft, 
   FiSearch, 
@@ -102,6 +103,12 @@ export default function ExplorePage() {
 
   return (
     <div className="min-h-screen bg-[#070b14] text-slate-100 flex flex-col selection:bg-purple-600 selection:text-white font-sans relative">
+      <SEOHead
+        title="Explore 25+ Engineering Blueprints, Case Studies & Locations"
+        description="Searchable directory of 25+ dedicated pages covering technical skills, enterprise case studies, founder startups (Uniportal, Kumaun Software), location hubs, and services by Vishal Singh."
+        keywords={["Engineering Directory", "Vishal Singh Case Studies", "MERN Stack Blueprints", "Uniportal", "Eureka Forbes", "Khatima", "Dehradun"]}
+        type="website"
+      />
       
       {/* Background Glows */}
       <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-purple-600/10 rounded-full blur-[160px] pointer-events-none -z-10" />

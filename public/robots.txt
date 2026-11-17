@@ -1,3 +1,45 @@
-# https://www.robotstxt.org/robotstxt.html
+# ==============================================================================
+# Robots.txt for Vishal Singh Portfolio
+# Optimized for Web Search Engines & Generative AI Agents (GEO)
+# ==============================================================================
+
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /admin
+Disallow: /private/
+
+# Explicit Rules for AI Crawlers & LLM Indexers
+User-agent: GPTBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+Allow: /llms.txt
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Sitemap Location
+Sitemap: https://portfoliobyvishal.netlify.app/sitemap.xml
+
+# LLM Directives (llms.txt Standard)
+# See https://llmstxt.org/ for details
+# Primary briefing: https://portfoliobyvishal.netlify.app/llms.txt
+# Comprehensive dataset: https://portfoliobyvishal.netlify.app/llms-full.txt

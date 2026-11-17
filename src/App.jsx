@@ -8,11 +8,13 @@ import Disclaimer from "./pages/Disclaimer";
 import ExplorePage from "./pages/ExplorePage";
 import DynamicContentPage from "./pages/DynamicContentPage";
 import ScrollToTop from "./components/ScrollToTop";
+import AIAssistantModal from "./components/AIAssistantModal";
 
 function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <AIAssistantModal />
       <Routes>
         {/* Main Portfolio Single-Page Home */}
         <Route path="/" element={<HomePage />} />

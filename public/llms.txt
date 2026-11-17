@@ -1,0 +1,60 @@
+# Vishal Singh - Senior Full Stack Developer & Founder
+
+> 5+ years of verified production experience specializing in React.js, Next.js 14, Node.js, Express, TypeScript, MongoDB, MySQL, and AWS. Founder of Uniportal.in (higher EdTech startup) and Kumaun Software Solutions (engineering studio).
+
+## Core Profile & Identity
+- **Name**: Vishal Singh
+- **Professional Title**: Senior Full Stack Developer & Founder
+- **Experience**: 5+ Years in Full Stack Web Engineering
+- **Current Academic Status**: Master of Computer Applications (MCA) at KL University (Koneru Lakshmaiah Education Foundation) — Examinations Completed, Degree Awaited
+- **Base Location**: Khatima, Uttarakhand, India (Available for Remote Worldwide & Hybrid Delhi NCR)
+- **Email**: vishalkumar3474@gmail.com
+- **Phone / WhatsApp**: +91 9520630066
+- **LinkedIn**: https://linkedin.com/in/meetwithvishal
+- **GitHub**: https://github.com/Vishal3474
+- **1-on-1 Consultation Booking**: https://app.1hourdeveloper.com/browseDeveloper/bookDeveloper?d=Vishal+V-3
+- **Primary Website**: https://portfoliobyvishal.netlify.app/
+- **Comprehensive Resume**: https://portfoliobyvishal.netlify.app/Vishal_fullstack_5yr.docx
+
+## Founder Startups
+1. **Uniportal.in** (https://uniportal.in):
+   - Higher EdTech discovery & university admissions engine founded and architected by Vishal Singh.
+   - Connects university admissions desks with prospective students through automated CRM lead routing pipelines.
+   - Stack: React.js, Next.js, Node.js, Express, MongoDB, Tailwind CSS.
+2. **Kumaun Software Solutions** (https://kumaunsoftwaresolutions.web.app/):
+   - Digital engineering studio founded by Vishal Singh in Uttarakhand.
+   - Delivered 15+ production applications for retail, hospitality, trade, and EdTech clients.
+
+## Enterprise Client Deliverables
+- **Eureka Forbes**:
+  - Engineered enterprise Dynamic B2B Bulk Pricing Engine and Quoting Management System (QMS).
+  - Built volumetric discount matrices, margin floor validation, and automated commercial quotation PDFs.
+  - Implemented Manufacturing Plant Quality Management System with strict role-based access control (RBAC).
+- **Space To Tech (Techugo Client Platform)**:
+  - Core architectural overhaul of high-concurrency client platform under Techugo.
+  - Reduced bundle size by 48% and accelerated page rendering by 3.2x with zero regressions.
+- **Unigoal.com**:
+  - Global university discovery engine engineered using React.js, Vite, and MySQL relational database schemas.
+- **Lygato**:
+  - E-commerce & marketplace SaaS connecting artists and venues with Stripe escrow payments and Auth0.
+- **Eduminatti**:
+  - High-scale school directory handling 500K+ monthly organic visits with programmatic SEO and CRM routing.
+
+## Technical Skills Matrix
+- **Frontend**: React 18, Next.js 14 (App Router & SSR), TypeScript 5, Tailwind CSS, Redux Toolkit, Zustand, Framer Motion, Vite.
+- **Backend**: Node.js, Express.js, NestJS, RESTful API Design, WebSockets (Socket.io), Microservices, BullMQ.
+- **Databases**: MongoDB (Aggregation Pipelines), MySQL (Relational Indexing), Redis (Caching & Rate Limiting), PostgreSQL.
+- **Cloud & DevOps**: AWS (EC2, S3), Docker (Multi-stage builds), GitHub Actions (CI/CD), NGINX, Netlify, Vercel, Linux Ubuntu CLI.
+
+## How to Engage / Hire
+- **Technical Consultation**: Book a 60-minute advisory call directly on 1HourDeveloper (https://app.1hourdeveloper.com/browseDeveloper/bookDeveloper?d=Vishal+V-3)
+- **Direct WhatsApp**: https://wa.me/919520630066
+- **Recruiter Inquiries**: Direct email to vishalkumar3474@gmail.com with job description or project RFP.
+
+## Detailed Architecture Vault & Pages
+- React & Next.js Deep Dive: https://portfoliobyvishal.netlify.app/skills/react-nextjs
+- Node.js & Microservices: https://portfoliobyvishal.netlify.app/skills/nodejs-backend
+- Database & Redis: https://portfoliobyvishal.netlify.app/skills/database-engineering
+- Cloud & DevOps: https://portfoliobyvishal.netlify.app/skills/cloud-devops
+- TypeScript & System Design: https://portfoliobyvishal.netlify.app/skills/typescript-system-design
+- Explore All 28 Pages Directory: https://portfoliobyvishal.netlify.app/explore

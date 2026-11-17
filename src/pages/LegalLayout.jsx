@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import SEOHead from "../components/SEOHead";
 import { FiArrowLeft, FiShield, FiFileText, FiGlobe, FiInfo, FiCalendar, FiArrowUpRight } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 
@@ -15,6 +16,11 @@ export default function LegalLayout({ title, subtitle, badge, lastUpdated = "Nov
 
   return (
     <div className="min-h-screen bg-[#080c14] text-slate-100 flex flex-col selection:bg-purple-600 selection:text-white">
+      <SEOHead
+        title={title}
+        description={subtitle}
+        keywords={["Legal", "Compliance", "Privacy Policy", "Terms and Conditions", "Vishal Singh", "Indian IT Act"]}
+      />
       {/* Top Fixed Navigation Header */}
       <header className="sticky top-0 left-0 right-0 z-40 bg-[#080c14]/90 backdrop-blur-xl border-b border-white/[0.08] px-4 sm:px-8 py-3.5">
         <div className="max-w-6xl mx-auto flex items-center justify-between gap-4">

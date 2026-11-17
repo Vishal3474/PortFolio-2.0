@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SEOHead from "../components/SEOHead";
 import { 
   FiArrowLeft, 
   FiClock, 
@@ -53,6 +54,25 @@ export default function PageLayout({ data }) {
 
   return (
     <div className="min-h-screen bg-[#070b14] text-slate-100 flex flex-col selection:bg-purple-600 selection:text-white relative font-sans">
+      <SEOHead
+        title={title}
+        description={subtitle}
+        keywords={tags}
+        type="article"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": category === "skills" ? "TechArticle" : "Article",
+          "headline": title,
+          "description": subtitle,
+          "keywords": tags.join(", "),
+          "author": {
+            "@type": "Person",
+            "name": "Vishal Singh",
+            "url": "https://portfoliobyvishal.netlify.app/"
+          },
+          "url": `https://portfoliobyvishal.netlify.app${path}`
+        }}
+      />
       
       {/* Background Ambient Glows */}
       <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-purple-600/10 rounded-full blur-[160px] pointer-events-none -z-10" />
