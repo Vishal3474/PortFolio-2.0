@@ -1,285 +1,515 @@
-import React from "react";
+import React, { useState } from "react";
+import {
+  FiExternalLink,
+  FiCheckCircle,
+  FiArrowLeft,
+  FiArrowRight,
+  FiArrowUpRight,
+  FiLayers,
+  FiCode,
+  FiDatabase,
+} from "react-icons/fi";
+
+const showcaseCards = [
+  {
+    id: "eureka-pricing",
+    tag: "ENTERPRISE B2B",
+    shortTitle: "Bulk Pricing",
+    fullTitle: "Eureka Forbes • Dynamic B2B Bulk Pricing Engine",
+    subtitle:
+      "Engineered enterprise pricing tier algorithms, reusable Next.js/React form architectures with strict validation, and automated quotation pipelines for sales teams.",
+    stack: ["Next.js", "React.js", "TypeScript", "Tailwind CSS", "REST APIs"],
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
+    client: "Eureka Forbes",
+    badge: "Enterprise Production",
+  },
+  {
+    id: "eureka-qms",
+    tag: "MANUFACTURING QMS",
+    shortTitle: "Plant QMS",
+    fullTitle: "Manufacturing Quality Management System (QMS)",
+    subtitle:
+      "Developed web-based QMS for plant inspectors and operational heads with role-aware RBAC, structured defect tracking audit logs, and analytical dashboards.",
+    stack: ["React.js", "Next.js", "TypeScript", "RBAC", "Tailwind CSS"],
+    image:
+      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80",
+    client: "Eureka Forbes",
+    badge: "Plant Operations",
+  },
+  {
+    id: "unigoal",
+    tag: "REACT • VITE • MYSQL",
+    shortTitle: "Unigoal.com",
+    fullTitle: "Unigoal.com • Global University Discovery Engine",
+    subtitle:
+      "Engineered with ultra-fast React & Vite, relational MySQL database architecture with optimized indexing, faceted course search, and student lead application pipelines.",
+    stack: ["React.js", "Vite", "MySQL", "Tailwind CSS", "REST APIs"],
+    image:
+      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
+    client: "Unigoal",
+    badge: "React + Vite + MySQL",
+  },
+  {
+    id: "lygato",
+    tag: "SAAS & MARKETPLACE",
+    shortTitle: "Lygato Platform",
+    fullTitle: "Lygato • Full Stack Artist & Promoter Platform",
+    subtitle:
+      "Entertainment marketplace connecting artists and venues with Stripe escrow payments, Auth0 enterprise authentication, and GetStream real-time client chat.",
+    stack: ["React.js", "PostgreSQL", "Stripe", "Auth0", "GetStream"],
+    image:
+      "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    client: "Lygato",
+    badge: "Marketplace SaaS",
+  },
+  {
+    id: "eduminatti",
+    tag: "HIGH-TRAFFIC EDTECH",
+    shortTitle: "Eduminatti",
+    fullTitle: "Eduminatti • High-Traffic School Search & Lead CRM",
+    subtitle:
+      "High-performance SEO-friendly SSR page architecture, custom Lead Management CRM for admin workflows, and faceted search across thousands of schools.",
+    stack: ["Next.js", "React.js", "REST APIs", "SEO Architecture", "Tailwind CSS"],
+    image:
+      "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80",
+    client: "Eduminatti",
+    badge: "EdTech Platform",
+  },
+];
+
+const projectsData = [
+  {
+    id: 1,
+    title: "Bulk Pricing Workflow – Eureka Forbes",
+    category: "Enterprise & B2B",
+    client: "Eureka Forbes",
+    description:
+      "Engineered an enterprise B2B bulk-pricing and quotation workflow enabling business clients and internal sales teams to manage product quantities, tiered discount calculations, and quotation generation.",
+    features: [
+      "Dynamic pricing tier calculation algorithms",
+      "Reusable React & Next.js form components with strict validation",
+      "Optimized state management for complex B2B enquiry flows",
+      "High-reliability enterprise responsive interface",
+    ],
+    tags: ["Next.js", "React.js", "TypeScript", "Tailwind CSS", "REST APIs", "State Management"],
+    badge: "Enterprise Production",
+    featured: true,
+  },
+  {
+    id: 2,
+    title: "Quality Management System (QMS) – Eureka Forbes",
+    category: "Enterprise & B2B",
+    client: "Eureka Forbes",
+    description:
+      "Developed a web-based Quality Management System to support structured manufacturing quality inspection workflows, operational visibility, defect tracking, and comprehensive reporting.",
+    features: [
+      "Role-aware workflows (RBAC) for plant managers & inspectors",
+      "Structured defect & issue tracking audit logs",
+      "Custom responsive reporting and analytical dashboards",
+      "Maintainable, component-driven design system",
+    ],
+    tags: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "RBAC", "Form Validation"],
+    badge: "Enterprise Production",
+    featured: true,
+  },
+  {
+    id: 3,
+    title: "Lygato – Entertainment Professional Platform",
+    category: "SaaS & Marketplace",
+    client: "Lygato",
+    description:
+      "Full-stack entertainment marketplace connecting artists, venues, and event promoters for event planning, contract bookings, media streaming, and real-time collaboration.",
+    features: [
+      "Stripe payment gateway integration for secure escrow bookings",
+      "Auth0 enterprise authentication with social logins",
+      "GetStream chat engine for real-time client messaging",
+      "SoundCloud media player integration for artist portfolios",
+    ],
+    tags: ["React.js", "PostgreSQL", "Material UI", "Stripe", "Auth0", "GetStream", "SoundCloud"],
+    badge: "Marketplace SaaS",
+    featured: true,
+  },
+  {
+    id: 4,
+    title: "Eduminatti – School Portal & Lead Management",
+    category: "SaaS & Marketplace",
+    client: "Eduminatti",
+    description:
+      "Built a high-traffic education marketplace platform using Next.js with an integrated Lead Management App to streamline parent enquiries, lead scoring, and school conversion funnels.",
+    features: [
+      "High-performance SEO-friendly SSR page architecture",
+      "Custom Lead Management CRM dashboard for admin workflows",
+      "Fast faceted search and filtering across thousands of schools",
+      "Responsive, accessible frontend design system",
+    ],
+    tags: ["Next.js", "React.js", "REST APIs", "SEO Architecture", "Tailwind CSS", "CRM"],
+    badge: "EdTech Platform",
+    featured: true,
+  },
+  {
+    id: 5,
+    title: "Unigoal.com – Global Education Discovery",
+    category: "SaaS & Marketplace",
+    client: "Unigoal",
+    description:
+      "Full-stack higher-education platform built with React, Vite, and MySQL, enabling seamless global university discovery, course comparisons, eligibility criteria checks, and student application pipelines.",
+    features: [
+      "Built with high-performance React.js & Vite for sub-second page loads",
+      "Relational database architecture powered by MySQL with optimized indexing",
+      "Faceted university & course search with multi-parameter filter queries",
+      "Interactive multi-step application tracking and student lead workflows",
+    ],
+    tags: ["React.js", "Vite", "MySQL", "Tailwind CSS", "REST APIs"],
+    badge: "React • Vite • MySQL",
+    featured: false,
+  },
+  {
+    id: 6,
+    title: "YOLOv11 Box Counting POC",
+    category: "AI & Vision",
+    client: "R&D Proof of Concept",
+    description:
+      "Built an automated computer vision proof-of-concept for real-time box and package counting using the YOLOv11 object detection model and custom Roboflow training.",
+    features: [
+      "Prepared custom dataset with bounding-box annotations via Roboflow",
+      "Trained model checkpoint for accurate warehouse inventory counting",
+      "Implemented inference pipeline with automated count verification",
+      "Validated computer vision metrics under varying lighting & angles",
+    ],
+    tags: ["YOLOv11", "Python", "Roboflow", "Computer Vision", "Object Detection", "Inference"],
+    badge: "AI / ML Vision",
+    featured: false,
+  },
+  {
+    id: 7,
+    title: "JobRaahi – Hyperlocal Job Search Engine",
+    category: "SaaS & Marketplace",
+    client: "JobRaahi",
+    description:
+      "Hyperlocal job discovery platform connecting Indian candidates to nearby employment opportunities with instant filters, recruiter dashboards, and mobile-first UI.",
+    features: [
+      "Location-aware job search and recommendation feeds",
+      "Reusable component architecture in React & TypeScript",
+      "Smooth multi-criteria filter state with URL query syncing",
+      "Optimized lightweight mobile layout for low-bandwidth networks",
+    ],
+    tags: ["React.js", "Next.js", "TypeScript", "REST APIs", "Tailwind CSS", "Search"],
+    badge: "Job Portal",
+    featured: false,
+  },
+  {
+    id: 8,
+    title: "Interactive Task & Productivity Suite",
+    category: "Tools & Utilities",
+    client: "Personal Production",
+    description:
+      "Comprehensive task manager built to demonstrate scalable Redux Toolkit state slice architecture, custom middleware, action dispatchers, and persistent storage.",
+    features: [
+      "Redux Toolkit state slicing with action payloads",
+      "Task completion metrics, status filters, and priority tags",
+      "Instant responsive design with Tailwind CSS styling",
+    ],
+    tags: ["React", "Redux Toolkit", "Hooks", "Netlify"],
+    link: "https://todo-vishal.netlify.app/",
+    badge: "Live App",
+    featured: false,
+  },
+];
+
+const categories = ["All", "Enterprise & B2B", "SaaS & Marketplace", "AI & Vision", "Tools & Utilities"];
 
 const Projects = () => {
+  const [activeShowcase, setActiveShowcase] = useState(0);
+  const [activeTab, setActiveTab] = useState("All");
+
+  const handlePrevShowcase = () => {
+    setActiveShowcase((prev) => (prev - 1 + showcaseCards.length) % showcaseCards.length);
+  };
+
+  const handleNextShowcase = () => {
+    setActiveShowcase((prev) => (prev + 1) % showcaseCards.length);
+  };
+
+  const filteredProjects =
+    activeTab === "All"
+      ? projectsData
+      : projectsData.filter((item) => item.category === activeTab);
+
   return (
-    <div name="Projects" className="w-full my-32">
-      <div className="max-w-[1240px] mx-auto px-2">
-        <h2 className="text-5xl font-bold text-center text-indigo-600">
-          My Recent Works
-        </h2>
-        <p className="text-2xl py-8 text-gray-500 text-center">
-          Here are a few projects I've worked on recently.
-        </p>
+    <section name="projects" className="py-24 relative overflow-hidden bg-[#070a12]/50">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
-          <div class="max-w-sm rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
-            <a href="#">
-              <img
-                class="rounded-t-lg"
-                src="https://cdn.discordapp.com/attachments/944189291427430421/979790050948681788/1.jpg"
-                alt=""
-              />
-            </a>
-            <div class="p-5">
-              <a href="https://todo-vishal.netlify.app/" target="_blank">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  Todo_App
-                </h5>
-              </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                It is a simple Todo app! Learned about useState and useDispatch
-                to add a task, mark it as complete , mark it as Incomplete and
-                Show Number Of Todo Task
-              </p>
-              <a
-                href="https://todo-vishal.netlify.app/ "
-                target="_blank"
-                class="inline-flex items-center rounded-lg bg-indigo-700 py-2 px-3 text-center text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        {/* ========================================================================= */}
+        {/* SHOPMOBI-INSPIRED 3D PERSPECTIVE ACCORDION SHOWCASE                       */}
+        {/* ========================================================================= */}
+        <div className="mb-24">
+          {/* Header Row with Title and Directional Navigation Buttons */}
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-6">
+            <div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-xs font-semibold uppercase tracking-wider mb-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-purple-400 animate-ping" />
+                <span>Shopmobi 3D Interactive Perspective</span>
+              </div>
+              <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-[1.15]">
+                Flagship Workflows. <br />
+                <span className="bg-gradient-to-r from-purple-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent">
+                  Engineered for Production Scale.
+                </span>
+              </h2>
+            </div>
+
+            {/* Navigation Arrow Controls */}
+            <div className="flex items-center gap-3 shrink-0">
+              <button
+                type="button"
+                onClick={handlePrevShowcase}
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-slate-300 hover:text-white hover:bg-white/15 transition-all active:scale-95 shadow-md cursor-pointer"
+                aria-label="Previous showcase card"
               >
-                {" "}
-                View Project{" "}
-              </a>
+                <FiArrowLeft className="h-4 w-4" />
+              </button>
+              <button
+                type="button"
+                onClick={handleNextShowcase}
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-slate-300 hover:text-white hover:bg-white/15 transition-all active:scale-95 shadow-md cursor-pointer"
+                aria-label="Next showcase card"
+              >
+                <FiArrowRight className="h-4 w-4" />
+              </button>
             </div>
           </div>
 
-          <div class="max-w-sm rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
-            <a href="https://clonecodeyogi.netlify.app/" target="_blank">
-              <img
-                class="rounded-t-lg"
-                src="https://cdn.discordapp.com/attachments/944189291427430421/979795934974206012/CodeYogi.png"
-                alt=""
-              />
-            </a>
-            <div class="p-5">
-              <a href="https://clonecodeyogi.netlify.app/" target="_blank">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  CodeYogi_Clone
-                </h5>
-              </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                CodeYogi Provide Free Web Development Course , And I Make Clone
-                Same Like CodeYogi With Using React And APIs.
-              </p>
-              <a
-                href="https://clonecodeyogi.netlify.app/"
-                target="_blank"
-                class="inline-flex items-center rounded-lg bg-indigo-700 py-2 px-3 text-center text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                {" "}
-                View Project{" "}
-              </a>
-            </div>
-          </div>
+          {/* 3D Perspective Accordion with Physics-style Flex Expansion */}
+          <div
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4 h-[500px] sm:h-[520px] w-full"
+            style={{ perspective: "1400px" }}
+          >
+            {showcaseCards.map((card, idx) => {
+              const isActive = activeShowcase === idx;
+              const rotY = isActive ? 0 : idx < activeShowcase ? 3 : -3;
 
-          <div class="max-w-sm rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
-            <a
-              href="https://bit.ly/3Gxrxmj
-"
-            >
-              <img
-                class="rounded-t-lg"
-                src="https://cdn.discordapp.com/attachments/944189291427430421/979795935196479529/Tailwind.png"
-                alt=""
-              />
-            </a>
-            <div class="p-5">
-              <a
-                href="https://bit.ly/3Gxrxmj
-"
-              >
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  Responsive_Page{" "}
-                </h5>
-              </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                I created the mobile and desktop version of home page same like
-                as Figma Created in tailwindcss Playground Made with ❤️ at
-                CodeYogi 😜
-              </p>
-              <a
-                href="https://bit.ly/3Gxrxmj 
-"
-                class="inline-flex items-center rounded-lg bg-indigo-700 py-2 px-3 text-center text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                {" "}
-                View Project{" "}
-              </a>
-            </div>
-          </div>
+              return (
+                <div
+                  key={card.id}
+                  onMouseEnter={() => setActiveShowcase(idx)}
+                  onClick={() => setActiveShowcase(idx)}
+                  style={{
+                    flex: isActive ? 4 : 1,
+                    transform: `rotateY(${rotY}deg)`,
+                    transformOrigin: "center center",
+                  }}
+                  className={`relative min-w-0 h-full rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer shadow-2xl transition-[flex,transform] duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] border ${
+                    isActive
+                      ? "border-purple-400/40 shadow-purple-500/10"
+                      : "border-white/10 opacity-75 hover:opacity-100"
+                  } group`}
+                >
+                  {/* Background Image with Dynamic Brightness & Zoom */}
+                  <img
+                    src={card.image}
+                    alt={card.fullTitle}
+                    draggable="false"
+                    className={`absolute inset-0 h-full w-full object-cover object-center transition-all duration-700 ease-out ${
+                      isActive
+                        ? "scale-105 brightness-95"
+                        : "scale-100 brightness-50 group-hover:brightness-75"
+                    }`}
+                  />
 
-          <div class="max-w-sm rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
-            <a
-              href="https://assignment-26-unit-converter-without-prompt-vishal3474.codeyogiteam.repl.co/"
-              target="_blank"
-            >
-              <img
-                class="rounded-t-lg"
-                src="https://cdn.discordapp.com/attachments/944189291427430421/979805699133571132/Unit.png"
-                alt="No img"
-              />
-            </a>
-            <div class="p-5">
-              <a
-                href="https://assignment-26-unit-converter-without-prompt-vishal3474.codeyogiteam.repl.co/"
-                target="_blank"
-              >
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  Unit_Converter
-                </h5>
-              </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Unit of Conversion is a multi-step process involving
-                multiplication or division by a Measurment Units Conveter, can
-                all be measured in various ways.
-              </p>
-              <a
-                href="https://assignment-26-unit-converter-without-prompt-vishal3474.codeyogiteam.repl.co/"
-                target="_blank"
-                class="inline-flex items-center rounded-lg bg-indigo-700 py-2 px-3 text-center text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                {" "}
-                View Project{" "}
-              </a>
-            </div>
-          </div>
+                  {/* High Contrast Gradient Scrim Overlay */}
+                  <div
+                    className={`absolute inset-0 bg-gradient-to-t from-[#06080e]/95 via-[#06080e]/60 to-transparent transition-opacity duration-500 pointer-events-none ${
+                      isActive ? "opacity-95" : "opacity-90"
+                    }`}
+                  />
 
-          <div class="max-w-sm rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
-            <a href="https://create-dashboard.netlify.app/" target="_blank">
-              <img
-                class="rounded-t-lg"
-                src="https://cdn.discordapp.com/attachments/944189291427430421/979805698550542416/DashBoard.png"
-                alt=""
-              />
-            </a>
-            <div class="p-5">
-              <a href="https://create-dashboard.netlify.app/" target="_blank">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  Create_Dashboard
-                </h5>
-              </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Dashboard i make Social Media like a (FaceBook, Twitter ,
-                discord) Ui/Ux Build In Tailwind Css
-              </p>
-              <a
-                href="https://create-dashboard.netlify.app/"
-                target="_blank"
-                class="inline-flex items-center rounded-lg bg-indigo-700 py-2 px-3 text-center text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                {" "}
-                View Project{" "}
-              </a>
-            </div>
-          </div>
+                  {/* Bottom Content Area */}
+                  <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6 lg:p-7 flex flex-col justify-end z-10 pointer-events-none">
+                    {/* Category Tag */}
+                    <span className="text-[10px] sm:text-[11px] font-mono font-bold tracking-[0.25em] text-purple-300 uppercase truncate transition-colors duration-300">
+                      {card.tag}
+                    </span>
 
-          <div class="max-w-sm rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
-            <a
-              href="https://assignment-34-create-ask-jud-clone-vishal3474.codeyogiteam.repl.co/"
-              target="_blank"
-            >
-              <img
-                class="rounded-t-lg"
-                src="https://cdn.discordapp.com/attachments/944189291427430421/979814205039460402/Ask_CodeYogi.png"
-                alt="No img"
-              />
-            </a>
-            <div class="p-5">
-              <a
-                href="https://assignment-34-create-ask-jud-clone-vishal3474.codeyogiteam.repl.co/"
-                target="_blank"
-              >
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  Ask_CodeYogi
-                </h5>
-              </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                This is same like as Ask Jud Clone, Do you need to ask a
-                question? Are you looking for answers? Jud offers you a space to
-                ask anything you want.
-              </p>
-              <a
-                href="https://assignment-34-create-ask-jud-clone-vishal3474.codeyogiteam.repl.co/"
-                target="_blank"
-                class="inline-flex items-center rounded-lg bg-indigo-700 py-2 px-3 text-center text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                {" "}
-                View Project{" "}
-              </a>
-            </div>
-          </div>
+                    {/* Title Area with Smooth Cross-fade */}
+                    <div className="relative mt-2 min-h-[32px] flex items-center">
+                      {/* Collapsed Short Title */}
+                      <h4
+                        className={`text-base sm:text-lg font-bold text-white tracking-tight truncate transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                          isActive
+                            ? "opacity-0 -translate-y-2 absolute pointer-events-none"
+                            : "opacity-100 translate-y-0"
+                        }`}
+                      >
+                        {card.shortTitle}
+                      </h4>
 
-          <div class="max-w-sm rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
-            <a
-              href="https://assignment-28-show-tables-of-a-range-of-numbers-vishal3474.codeyogiteam.repl.co/"
-              target="_blank"
-            >
-              <img
-                class="rounded-t-lg"
-                src="https://cdn.discordapp.com/attachments/944189291427430421/979814205383376926/Find_Table.png"
-                alt="No img"
-              />
-            </a>
-            <div class="p-5">
-              <a
-                href="https://assignment-28-show-tables-of-a-range-of-numbers-vishal3474.codeyogiteam.repl.co/"
-                target="_blank"
-              >
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  Find_Table
-                </h5>
-              </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                An efficient educational game for kids. Perfect for kids to help
-                them learn multiplication tables.
-              </p>
-              <a
-                href="https://assignment-28-show-tables-of-a-range-of-numbers-vishal3474.codeyogiteam.repl.co/"
-                target="_blank"
-                class="inline-flex items-center rounded-lg bg-indigo-700 py-2 px-3 text-center text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                {" "}
-                View Project{" "}
-              </a>
-            </div>
-          </div>
+                      {/* Active Full Title with Glowing Accent Bar */}
+                      <div
+                        className={`flex items-center gap-2.5 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                          isActive
+                            ? "opacity-100 translate-y-0 delay-100"
+                            : "opacity-0 translate-y-2 absolute pointer-events-none"
+                        }`}
+                      >
+                        <span className="w-1.5 h-6 bg-gradient-to-b from-purple-400 to-indigo-500 rounded-full shrink-0 shadow-[0_0_12px_rgba(168,85,247,0.8)]" />
+                        <h3 className="text-lg sm:text-2xl font-bold text-white tracking-tight leading-snug">
+                          {card.fullTitle}
+                        </h3>
+                      </div>
+                    </div>
 
-          <div class="max-w-sm rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
-            <a
-              href="https://assignment-29-create-team-list-page-using-react-vishal3474.codeyogiteam.repl.co/"
-              target="_blank"
-            >
-              <img
-                class="rounded-t-lg"
-                src="https://cdn.discordapp.com/attachments/944189291427430421/979814205916057610/Meet_Team_Card.png"
-                alt="No img"
-              />
-            </a>
-            <div class="p-5">
-              <a
-                href="https://assignment-29-create-team-list-page-using-react-vishal3474.codeyogiteam.repl.co/"
-                target="_blank"
-              >
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  Meet_Team_Card
-                </h5>
-              </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Meet our Team ,Alone we can do so little; together we can do so
-                much. – Helen Keller
-              </p>
-              <a
-                href="https://assignment-29-create-team-list-page-using-react-vishal3474.codeyogiteam.repl.co/"
-                target="_blank"
-                class="inline-flex items-center rounded-lg bg-indigo-700 py-2 px-3 text-center text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                {" "}
-                View Project{" "}
-              </a>
-            </div>
+                    {/* Subtitle & Tech Badges - Smooth Grid Expansion */}
+                    <div
+                      className={`grid transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                        isActive
+                          ? "grid-rows-[1fr] opacity-100 mt-2 delay-100"
+                          : "grid-rows-[0fr] opacity-0 mt-0 pointer-events-none"
+                      }`}
+                    >
+                      <div className="overflow-hidden">
+                        <p
+                          className={`text-xs sm:text-sm text-slate-300 font-normal leading-relaxed pl-4 max-w-xl transition-all duration-500 ${
+                            isActive ? "translate-y-0 opacity-100 delay-150" : "translate-y-2 opacity-0"
+                          }`}
+                        >
+                          {card.subtitle}
+                        </p>
+
+                        {/* Tech Stack Pills in Active Card */}
+                        <div
+                          className={`mt-4 pl-4 flex flex-wrap gap-1.5 items-center transition-all duration-500 ${
+                            isActive ? "translate-y-0 opacity-100 delay-200" : "translate-y-2 opacity-0"
+                          }`}
+                        >
+                          {card.stack.map((item, sIdx) => (
+                            <span
+                              key={sIdx}
+                              className="text-[10px] font-mono px-2.5 py-0.5 rounded-md bg-white/10 text-purple-200 border border-white/10 backdrop-blur-sm"
+                            >
+                              {item}
+                            </span>
+                          ))}
+                          <span className="text-[10px] font-semibold text-emerald-400 ml-2">
+                            • {card.client}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
+
+        {/* ========================================================================= */}
+        {/* COMPREHENSIVE PROJECT DIRECTORY & FILTERABLE GRID                          */}
+        {/* ========================================================================= */}
+        <div className="text-center max-w-2xl mx-auto mb-10">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-xs font-semibold uppercase tracking-wider mb-4">
+            Full Engineering Catalog
+          </div>
+          <h2 className="font-heading text-3xl sm:text-4xl font-bold text-white tracking-tight">
+            Explore All Projects & Architecture
+          </h2>
+          <p className="mt-3 text-slate-400 text-sm sm:text-base">
+            Detailed breakdown of production features, architectural decisions, and technology implementations.
+          </p>
+        </div>
+
+        {/* Filter Tabs */}
+        <div className="flex flex-wrap items-center justify-center gap-2 mb-12">
+          {categories.map((tab) => (
+            <button
+              key={tab}
+              onClick={() => setActiveTab(tab)}
+              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 ${
+                activeTab === tab
+                  ? "bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-lg shadow-purple-600/30 scale-105"
+                  : "bg-white/[0.04] text-slate-400 hover:text-white hover:bg-white/[0.08] border border-white/[0.06]"
+              }`}
+            >
+              {tab}
+            </button>
+          ))}
+        </div>
+
+        {/* Projects Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {filteredProjects.map((project) => (
+            <div
+              key={project.id}
+              className="glass-card glass-card-hover rounded-3xl p-6 sm:p-8 border border-white/10 flex flex-col justify-between group relative overflow-hidden"
+            >
+              {/* Corner Ambient Glow */}
+              <div className="absolute top-0 right-0 w-48 h-48 bg-purple-600/10 rounded-full blur-3xl pointer-events-none group-hover:bg-purple-600/20 transition-all" />
+
+              <div>
+                {/* Header Meta */}
+                <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+                  <span className="text-xs font-bold px-3 py-1 rounded-full bg-purple-500/15 text-purple-300 border border-purple-500/25">
+                    {project.badge}
+                  </span>
+                  <span className="text-xs font-mono text-slate-400">
+                    {project.client}
+                  </span>
+                </div>
+
+                {/* Project Title */}
+                <h3 className="font-heading text-xl sm:text-2xl font-bold text-white group-hover:text-purple-300 transition-colors mb-3">
+                  {project.title}
+                </h3>
+
+                {/* Description */}
+                <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-5">
+                  {project.description}
+                </p>
+
+                {/* Feature Bullet Points */}
+                <div className="space-y-1.5 mb-6 text-xs text-slate-300">
+                  {project.features.map((feature, idx) => (
+                    <div key={idx} className="flex items-start gap-2">
+                      <FiCheckCircle className="text-emerald-400 shrink-0 mt-0.5" />
+                      <span>{feature}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Bottom: Tags & Link */}
+              <div className="pt-4 border-t border-white/[0.08] flex flex-col gap-4">
+                <div className="flex flex-wrap gap-1.5">
+                  {project.tags.map((tag, i) => (
+                    <span
+                      key={i}
+                      className="text-[11px] font-mono px-2.5 py-0.5 rounded-md bg-white/[0.04] text-slate-300 border border-white/[0.06]"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                {project.link && (
+                  <div>
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-purple-400 hover:text-purple-300 transition-colors"
+                    >
+                      <span>Explore Live Project</span>
+                      <FiExternalLink className="text-sm" />
+                    </a>
+                  </div>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+
       </div>
-    </div>
+    </section>
   );
 };
 

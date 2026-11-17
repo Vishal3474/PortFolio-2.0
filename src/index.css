@@ -2,13 +2,221 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  li {
-    @apply p-4
+@layer utilities {
+  .bg-grid-pattern {
+    background-size: 40px 40px;
+    background-image: 
+      linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
   }
+  .bg-dots-pattern {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  .glass-card {
+    background: rgba(15, 23, 42, 0.65);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .glass-card-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .glass-card-hover:hover {
+    transform: translateY(-4px);
+    border-color: rgba(147, 51, 234, 0.4);
+    box-shadow: 0 20px 40px -15px rgba(124, 58, 237, 0.25);
+  }
+}
 
-  button {
-    @apply text-white border bg-indigo-600 border-indigo-600
-    hover:bg-transparent hover:text-indigo-600 rounded-md
+/* Shopmobi Keyframe Animations */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
   }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee-reverse {
+  display: flex;
+  width: max-content;
+  animation: marquee-reverse 30s linear infinite;
+}
+
+.animate-marquee:hover,
+.animate-marquee-reverse:hover {
+  animation-play-state: paused;
+}
+
+/* Floating card levitation animations */
+@keyframes float-card-up {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes float-card-down {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.animate-float-card-up {
+  animation: float-card-up 4.2s ease-in-out infinite;
+}
+
+.animate-float-card-down {
+  animation: float-card-down 5s ease-in-out infinite;
+}
+
+@keyframes slideInFromBottomLeft {
+  0% {
+    opacity: 0;
+    transform: translate(-45px, 45px) scale(0.92);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes slideInFromTopRight {
+  0% {
+    opacity: 0;
+    transform: translate(45px, -45px) scale(0.92);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+.animate-slide-bottom-left {
+  animation: slideInFromBottomLeft 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-top-right {
+  animation: slideInFromTopRight 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* Shopmobi Magic Bento & Interactive Border Glow */
+.magic-bento-card {
+  --glow-x: 50%;
+  --glow-y: 50%;
+  --glow-intensity: 0;
+  --glow-radius: 320px;
+  position: relative;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.magic-bento-card--border-glow::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 1.5px;
+  background: radial-gradient(
+    var(--glow-radius) circle at var(--glow-x) var(--glow-y),
+    rgba(168, 85, 247, calc(var(--glow-intensity) * 0.95)) 0%,
+    rgba(99, 102, 241, calc(var(--glow-intensity) * 0.6)) 30%,
+    transparent 65%
+  );
+  border-radius: inherit;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+.magic-bento-card--border-glow:hover {
+  box-shadow:
+    0 12px 35px -10px rgba(147, 51, 234, 0.35),
+    0 0 30px rgba(124, 58, 237, 0.15);
+}
+
+/* Authentic Word Document Paper Styling */
+.custom-docx-paper {
+  background-color: #ffffff !important;
+  color: #1e293b !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.docx-render-container {
+  color: #0f172a !important;
+  font-family: Calibri, 'Segoe UI', Arial, sans-serif;
+}
+
+.docx-render-container p {
+  margin-bottom: 0.35rem;
+  line-height: 1.4;
+}
+
+.docx-render-container h1,
+.docx-render-container h2,
+.docx-render-container h3 {
+  color: #0f172a !important;
+  font-family: Calibri, 'Segoe UI', Arial, sans-serif !important;
+  font-weight: 700;
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.docx-render-container table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.docx-render-container td,
+.docx-render-container th {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #cbd5e1;
 }
